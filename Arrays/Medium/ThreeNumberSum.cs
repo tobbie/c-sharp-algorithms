@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using static System.Console;
 
-namespace Arrays
+namespace Arrays.Medium
 {
     public class ThreeNumberSumTest
     {
