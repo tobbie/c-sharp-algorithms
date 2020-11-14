@@ -11,10 +11,10 @@ namespace AlgorithimsPractise
 		static void Main(string[] args)
 		{
 
-			TwoNumberSumTest.Run();
+			//TwoNumberSumTest.Run();
 			//ValidateSubSequence.Run();
 			//ThreeNumberSumTest.Run();		
-
+			MoveElementToEndPractice.Run();
 		}
 
 		
