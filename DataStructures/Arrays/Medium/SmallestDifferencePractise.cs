@@ -1,6 +1,6 @@
 ﻿using System;
 using static System.Math;
-namespace Arrays.Medium
+namespace DataStructures.Medium
 {
     public static class SmallestDifferencePractise
     {

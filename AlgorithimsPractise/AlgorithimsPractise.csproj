@@ -6,6 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Arrays\Arrays.csproj" />
+    <ProjectReference Include="..\Algorithims\Algorithims.csproj" />
+    <ProjectReference Include="..\DataStructures\DataStructures.csproj" />
   </ItemGroup>
 </Project>

@@ -3,14 +3,16 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlgorithimsPractise", "AlgorithimsPractise\AlgorithimsPractise.csproj", "{5B8DC148-CD3F-45B5-9071-B90BBD7863FD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Arrays", "Arrays\Arrays.csproj", "{7ECFB62D-FF4B-40C0-8FDD-98E9F1D778BB}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{386B4A69-64D2-4310-AED1-ADD84973D304}"
 	ProjectSection(SolutionItems) = preProject
 		README.md = README.md
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlgorithimsPractise.Tests", "AlgorithimsPractise.Tests\AlgorithimsPractise.Tests.csproj", "{EC5A6948-DDD3-4844-B2E3-66F5DD0DF200}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algorithims", "Algorithims\Algorithims.csproj", "{9722AB11-5056-402D-A4AD-4BEDA6157F89}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataStructures", "DataStructures\DataStructures.csproj", "{C0544D10-4E72-43F8-A5A4-0F3ACBE83ED0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -22,13 +24,17 @@ Global
 		{5B8DC148-CD3F-45B5-9071-B90BBD7863FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5B8DC148-CD3F-45B5-9071-B90BBD7863FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5B8DC148-CD3F-45B5-9071-B90BBD7863FD}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7ECFB62D-FF4B-40C0-8FDD-98E9F1D778BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7ECFB62D-FF4B-40C0-8FDD-98E9F1D778BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7ECFB62D-FF4B-40C0-8FDD-98E9F1D778BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7ECFB62D-FF4B-40C0-8FDD-98E9F1D778BB}.Release|Any CPU.Build.0 = Release|Any CPU
 		{EC5A6948-DDD3-4844-B2E3-66F5DD0DF200}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{EC5A6948-DDD3-4844-B2E3-66F5DD0DF200}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EC5A6948-DDD3-4844-B2E3-66F5DD0DF200}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EC5A6948-DDD3-4844-B2E3-66F5DD0DF200}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9722AB11-5056-402D-A4AD-4BEDA6157F89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9722AB11-5056-402D-A4AD-4BEDA6157F89}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9722AB11-5056-402D-A4AD-4BEDA6157F89}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9722AB11-5056-402D-A4AD-4BEDA6157F89}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0544D10-4E72-43F8-A5A4-0F3ACBE83ED0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0544D10-4E72-43F8-A5A4-0F3ACBE83ED0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0544D10-4E72-43F8-A5A4-0F3ACBE83ED0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0544D10-4E72-43F8-A5A4-0F3ACBE83ED0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

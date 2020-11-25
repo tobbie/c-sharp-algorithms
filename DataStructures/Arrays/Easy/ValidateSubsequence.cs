@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Collections;
 
 
-namespace Arrays.Easy
+namespace DataStructures.Easy
 {
     public class ValidateSubSequence
     {
