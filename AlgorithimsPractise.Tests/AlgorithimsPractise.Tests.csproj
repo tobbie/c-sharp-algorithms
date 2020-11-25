@@ -17,6 +17,6 @@
     <Folder Include="ArrayTests\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Arrays\Arrays.csproj" />
+    <ProjectReference Include="..\DataStructures\DataStructures.csproj" />
   </ItemGroup>
 </Project>

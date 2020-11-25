@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Strings\" />
+    <Folder Include="Strings\Easy\" />
+    <Folder Include="Strings\Meduim\" />
+    <Folder Include="Strings\Hard\" />
+    <Folder Include="Arrays\" />
+    <Folder Include="LinkedLists\" />
+    <Folder Include="Trees\" />
+    <Folder Include="Stacks\" />
+    <Folder Include="Queues\" />
+    <Folder Include="Graphs\" />
+    <Folder Include="HashTables\" />
+    <Folder Include="Arrays\Easy\" />
+    <Folder Include="Arrays\Medium\" />
+    <Folder Include="Arrays\Hard\" />
+    <Folder Include="Arrays\HackerRank\" />
+  </ItemGroup>
+</Project>

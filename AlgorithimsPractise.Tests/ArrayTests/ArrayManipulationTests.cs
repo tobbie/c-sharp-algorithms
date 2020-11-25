@@ -1,5 +1,5 @@
 ﻿using System;
-using Arrays.Medium;
+using DataStructures.Medium;
 using Xunit;
 using System.Linq;
 using System.Collections.Generic;

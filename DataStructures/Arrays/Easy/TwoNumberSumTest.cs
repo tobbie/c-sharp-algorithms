@@ -2,7 +2,7 @@
 using System.Collections;
 using static System.Console;
 
-namespace Arrays.Easy
+namespace DataStructures.Easy
 {
     public class TwoNumberSumTest
     {
