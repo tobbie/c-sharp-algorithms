@@ -15,7 +15,8 @@ namespace AlgorithimsPractise
 			//MonotonicArray.Run();
 			//SpiralTraverse.Run();
 			//ReverseIntegerArray.Run();
-			LongestPeak.Run();
+			//LongestPeak.Run();
+			ArrayOfProducts.Run();
 
 			//.RunSort();
 			//SortType.RunBubbleSort();
