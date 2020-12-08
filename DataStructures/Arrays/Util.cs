@@ -26,6 +26,21 @@ namespace DataStructures.Arrays
             ReadLine();
         }
 
+        public static void Print2DArray(List<int[]> list) {
+
+            WriteLine("[");
+            foreach (var item in list)
+            {
+                Write("  [");
+                Write($"{item[0]}, ");
+                Write($"{item[1]}, ");
+                Write($"{item[2]}, ");
+                Write($"{item[3]}, ");
+                Write("], ");
+            }
+            WriteLine("\n]");
+        }
+
 
     }
 
