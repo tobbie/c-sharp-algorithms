@@ -9,14 +9,17 @@ namespace DataStructures.Arrays.Medium
         private const string StrictlyIncreasing = "inc";
         private const string StrictlyDecreasing = "dec";
 
-        public static void Run() {
-            var testArray = new int[] {1, 2, 3,3, 4, 0, 10, 6, 5, -1, -3, 2, 3 , 1};
+        public static void Run()
+        {
+            var testArray = new int[] { 1, 3, 2 };
 
-            Util.PrintValue(FindLongestPeak(testArray));
+            Util.PrintValue(BestSolution(testArray));
         }
 
-        public static int FindLongestPeak(int[] array) {
-            if (array.Length < 3) {
+        public static int FindLongestPeak(int[] array)
+        {
+            if (array.Length < 3)
+            {
                 return 0;
             }
 
@@ -27,7 +30,8 @@ namespace DataStructures.Arrays.Medium
 
             var peak = new Peak();
 
-            while (nextPointer < array.Length) {
+            while (nextPointer < array.Length)
+            {
                 var lastPeak = new Peak();
                 if (trend.Equals(string.Empty))
                 {
@@ -61,30 +65,33 @@ namespace DataStructures.Arrays.Medium
 
 
                 }
-                else if (trend.Equals(StrictlyDecreasing)) {
+                else if (trend.Equals(StrictlyDecreasing))
+                {
 
-                   
-                    if (array[nextPointer] < array[currentPointer]) {
+
+                    if (array[nextPointer] < array[currentPointer])
+                    {
                         peak.InsertValue(array[nextPointer]);
                         peak.SetLength();
-                        lastPeak = peak;                       
-                    }                       
+                        lastPeak = peak;
+                    }
                     else if (array[nextPointer] > array[currentPointer])
                     {
                         trend = StrictlyIncreasing;
                         peak.SetLength();
                         peaks.Add(peak);
-                     
+
                         peak = new Peak();
                         peak.InsertValue(array[currentPointer]);
                         peak.InsertValue(array[nextPointer]);
                     }
-                    else {
+                    else
+                    {
                         peak = new Peak();
                         trend = string.Empty;
                     }
 
-                    
+
                 }
                 if (lastPeak.IsPeak & nextPointer == array.Length - 1)
                 {
@@ -98,30 +105,73 @@ namespace DataStructures.Arrays.Medium
                                          .Max() : 0;
 
             return length;
-            
-                     
+
+
         }
+
+        public static int BestSolution(int[] array)
+        {
+            if (array.Length < 3)
+            {
+                return 0;
+            }
+
+            int pointer = 1;
+            int longestPeak = 0;
+
+            while (pointer < array.Length - 1)
+            {
+
+                if (array[pointer] > array[pointer - 1] & array[pointer] > array[pointer + 1])
+                {
+                    //peak found
+                    int leftIndex = pointer - 1;
+                    int rightIndex = pointer + 1;
+
+                    //find peak length
+                    while (leftIndex > 0 && array[leftIndex - 1] < array[leftIndex])
+                        leftIndex--;
+
+                    while (rightIndex < array.Length - 1 && array[rightIndex + 1] < array[rightIndex])
+                        rightIndex++;
+
+                    int length = rightIndex - leftIndex + 1;
+                    longestPeak = length > longestPeak ? length : longestPeak;
+                    pointer = rightIndex;
+                }
+                pointer++;
+            }
+
+            return longestPeak;
+        }
+
+        
     }
 
-    public class Peak {
-        public List<int> Numbers { get;}
+    public class Peak
+    {
+        public List<int> Numbers { get; }
         public bool IsPeak { get; private set; }
         public int PeakLength { get; private set; }
 
-        public Peak() {
+        public Peak()
+        {
             Numbers = new List<int>();
             IsPeak = false;
         }
 
-        public void InsertValue(int number) {
+        public void InsertValue(int number)
+        {
             Numbers.Add(number);
         }
 
-        public void SetPeak() {
+        public void SetPeak()
+        {
             IsPeak = true;
         }
 
-        public void SetLength() {
+        public void SetLength()
+        {
             PeakLength = Numbers.Count;
         }
 

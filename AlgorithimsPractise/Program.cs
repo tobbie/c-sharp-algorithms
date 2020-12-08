@@ -1,8 +1,8 @@
 ﻿
 using DataStructures.Arrays.Medium;
 using DataStructures.Arrays.HackerRank;
-
-
+using DataStructures.Easy;
+using DataStructures.Arrays.Hard;
 
 namespace AlgorithimsPractise
 {
@@ -12,10 +12,16 @@ namespace AlgorithimsPractise
 		{
 
 
+			//FourNumberSum.Run();
+			SubarraySort.Run();
+
+
+
 			//MonotonicArray.Run();
 			//SpiralTraverse.Run();
 			//ReverseIntegerArray.Run();
-			LongestPeak.Run();
+			//LongestPeak.Run();
+			//ArrayOfProducts.Run();
 
 			//.RunSort();
 			//SortType.RunBubbleSort();

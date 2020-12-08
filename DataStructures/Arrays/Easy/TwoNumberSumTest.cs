@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections;
+using System.Collections.Generic;
 using static System.Console;
 
 namespace DataStructures.Easy
@@ -17,7 +18,7 @@ namespace DataStructures.Easy
 			int[] array = { 3, 5, -4, 8, 11, 1, -1, 6 };
 			int targetSum = 10;
 
-			var result = TwoNumberSum2(array, targetSum);
+			var result = OptimalSolution(array, targetSum);
 			if (result.Length > 0)
 			{
 				WriteLine($"The two number sum for {targetSum} are [{result[0]} , {result[1]} ]");
@@ -30,6 +31,39 @@ namespace DataStructures.Easy
 			}
         
 		}
+
+		public static int[] OptimalSolution(int[] array, int targetSum)
+		{
+
+			int[] result = new int[2];
+			var hashTable = new HashSet<int>();
+			
+
+		
+			
+			
+			int index = 0;
+			while (index < array.Length)
+			{
+
+				int secondNumber = targetSum - array[index];
+
+				if (hashTable.Contains(secondNumber))
+				{
+					result[0] = array[index];
+					result[1] = secondNumber;
+					return result;
+				}
+				else
+					hashTable.Add(array[index]);
+
+				index++;
+			}
+
+			return new int[0];
+
+		}
+
 
 		private static int[] TwoNumberSum(int[] array, int targetSum)
 		{
@@ -90,5 +124,8 @@ namespace DataStructures.Easy
 			return new int[0];
 
 		}
+
+
+		
 	}
 }

@@ -3,6 +3,7 @@ using DataStructures.Medium;
 using Xunit;
 using System.Linq;
 using System.Collections.Generic;
+using DataStructures.Easy;
 
 namespace AlgorithimsPractise.Tests.ArrayTests
 {
@@ -47,6 +48,26 @@ namespace AlgorithimsPractise.Tests.ArrayTests
                 Assert.Equal(resultArray[startingIndex], toMove);
                 startingIndex++;
             }
+        }
+
+        [Fact]
+
+        public void SouldReturnTwoSumArray() {
+
+            //Arrange
+            var inputArray = new int[]  { 3, 5, -4, 8, 11, 1, -1, 6 };
+            var targetSum = 10;
+            var expectedResult = new int[] { -1, 11 };
+
+
+
+            //Act
+
+            var result = TwoNumberSumTest.OptimalSolution(inputArray, targetSum);
+
+            //Assert
+            Assert.True(result.SequenceEqual(expectedResult));
+
         }
     }
 }
