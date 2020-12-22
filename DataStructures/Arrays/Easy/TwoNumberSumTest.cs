@@ -36,11 +36,7 @@ namespace DataStructures.Easy
 		{
 
 			int[] result = new int[2];
-			var hashTable = new HashSet<int>();
-			
-
-		
-			
+			var hashTable = new HashSet<int>();			
 			
 			int index = 0;
 			while (index < array.Length)

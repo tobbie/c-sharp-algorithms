@@ -19,6 +19,7 @@ namespace DataStructures.Arrays
             Write("]");
             WriteLine();
         }
+
         public static void PrintValue<T>(T value) {
 
             WriteLine();

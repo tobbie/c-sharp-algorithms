@@ -1,7 +1,7 @@
 ﻿
 using DataStructures.Arrays.Medium;
 using DataStructures.Arrays.HackerRank;
-using DataStructures.Easy;
+using DataStructures.Arrays.Easy;
 using DataStructures.Arrays.Hard;
 
 namespace AlgorithimsPractise
@@ -10,10 +10,11 @@ namespace AlgorithimsPractise
 	{
 		static void Main(string[] args)
 		{
-
-
+			MinimumRewards.Run();
+			//LongestRange.Run();
 			//FourNumberSum.Run();
-			SubarraySort.Run();
+			//SubarraySort.Run();
+			//TwoNumberIndices.Run();
 
 
 
