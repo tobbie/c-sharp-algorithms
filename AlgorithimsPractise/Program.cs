@@ -3,6 +3,10 @@ using DataStructures.Arrays.Medium;
 using DataStructures.Arrays.HackerRank;
 using DataStructures.Arrays.Easy;
 using DataStructures.Arrays.Hard;
+using DataStructures.Arrays.LeetCode;
+using DataStructures.Strings.Easy;
+using DataStructures.Strings.Meduim;
+using static System.Console;
 
 namespace AlgorithimsPractise
 {
@@ -10,11 +14,30 @@ namespace AlgorithimsPractise
 	{
 		static void Main(string[] args)
 		{
-			MinimumRewards.Run();
+
+			// RunLengthEncoding.Run();
+			GroupAnagrams.Run();
+			
+
+			 //FirstDuplicateValue.Run();
+			//ValidPalindrome.Run();
+
+			/**
+			char first = 'a';
+			char last = 'z';
+
+			WriteLine((int)first);
+			WriteLine((int)last);
+			**/
+			//CeaserCipherEncryptor.Run();
+			//MinimumRewards.Run();
 			//LongestRange.Run();
 			//FourNumberSum.Run();
 			//SubarraySort.Run();
 			//TwoNumberIndices.Run();
+
+			//ThreeNumberSum.Run();
+			//PalindromeCheck.Run();
 
 
 

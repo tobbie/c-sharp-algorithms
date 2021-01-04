@@ -20,5 +20,7 @@
     <Folder Include="Arrays\Medium\" />
     <Folder Include="Arrays\Hard\" />
     <Folder Include="Arrays\HackerRank\" />
+    <Folder Include="Arrays\LeetCode\" />
+    <Folder Include="Interfaces\" />
   </ItemGroup>
 </Project>

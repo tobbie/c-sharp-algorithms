@@ -88,15 +88,6 @@ namespace DataStructures.Arrays.Hard
                 rightPointer--;
             }
 
-            /**
-            while (rightPointer >= 0) {
-                if (scores[rightPointer] > scores[rightPointer + 1])
-                    rewardsDict[scores[rightPointer]]
-                        = Max(rewardsDict[scores[rightPointer + 1]] + 1, rewardsDict[scores[rightPointer]]);
-
-                rightPointer--;
-            }
-            **/
             var rewardsList = rewardsDict.Values.ToArray();
             return rewardsDict.Values.Sum();
         }
