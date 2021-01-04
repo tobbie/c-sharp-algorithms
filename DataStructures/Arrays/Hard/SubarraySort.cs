@@ -4,6 +4,12 @@ using System.Linq;
 
 namespace DataStructures.Arrays.Hard
 {
+   
+     //// <summary>
+     /// Prompt
+     /// </summary>
+
+
     public static class SubarraySort
     {
         public static void Run()

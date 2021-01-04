@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using static System.Console;
 
-namespace DataStructures.Arrays
+namespace DataStructures
 {
     public static class Util
     { 
@@ -19,6 +19,7 @@ namespace DataStructures.Arrays
             Write("]");
             WriteLine();
         }
+
         public static void PrintValue<T>(T value) {
 
             WriteLine();
@@ -28,15 +29,22 @@ namespace DataStructures.Arrays
 
         public static void Print2DArray(List<int[]> list) {
 
+        }
+
+
+
+        public static void Print2DArray<T>(List<List<T>>list)
+        {
+
             WriteLine("[");
             foreach (var item in list)
             {
-                Write("  [");
-                Write($"{item[0]}, ");
-                Write($"{item[1]}, ");
-                Write($"{item[2]}, ");
-                Write($"{item[3]}, ");
-                Write("], ");
+                Write("[");
+                foreach (var value in item)
+                {               
+                   Write($"{value}, ");
+                }         
+                Write("],");
             }
             WriteLine("\n]");
         }
