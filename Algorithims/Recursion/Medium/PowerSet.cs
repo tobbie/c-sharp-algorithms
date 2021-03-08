@@ -42,7 +42,7 @@ namespace Algorithims.Recursion.Medium
             var subsets = new List<List<int>>();
             subsets.Add(new List<int>());
 
-            if (array.Count == 0)
+            if (array.Count == 0)  // handle edge case for when input array is empty.
                 return subsets;
 
             if (index == null)
