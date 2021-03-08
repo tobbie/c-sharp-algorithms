@@ -1,9 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using static System.Console;
+using System.Linq;
 
-namespace DataStructures
-{
+namespace Common
+{ 
     public static class Util
     { 
 
@@ -31,20 +32,28 @@ namespace DataStructures
 
         }
 
-
-
         public static void Print2DArray<T>(List<List<T>>list)
         {
 
             WriteLine("[");
-            foreach (var item in list)
+            foreach (var array in list)
             {
                 Write("[");
-                foreach (var value in item)
-                {               
-                   Write($"{value}, ");
-                }         
-                Write("],");
+                foreach (var value in array)
+                {
+                 if (array.Last().Equals(value))
+                        Write($"{value}");
+                  else
+                        Write($"{value}, ");
+                   
+                }
+
+                if (list.Last().Equals(array))
+                    Write("]");
+                else
+                    Write("],");
+               
+
             }
             WriteLine("\n]");
         }

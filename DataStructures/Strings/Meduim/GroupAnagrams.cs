@@ -1,12 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
+using Common;
 
 namespace DataStructures.Strings.Meduim
 {
     public static class GroupAnagrams
     {
         public static void Run() {
-            var input = new string[] {"yo", "act", "flop", "tac", "foo", "cat", "oy", "olfp" };
+            // var input = new string[] {"yo", "act", "flop", "tac", "foo", "cat", "oy", "olfp" };
+            var input = new string[] {"a"};
             Util.Print2DArray(OptimalSolution(input));
             
         }

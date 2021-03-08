@@ -14,6 +14,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algorithims", "Algorithims\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataStructures", "DataStructures\DataStructures.csproj", "{C0544D10-4E72-43F8-A5A4-0F3ACBE83ED0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{4A62A97F-E122-49CB-8BA9-CA49AC0A4D51}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,5 +38,9 @@ Global
 		{C0544D10-4E72-43F8-A5A4-0F3ACBE83ED0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C0544D10-4E72-43F8-A5A4-0F3ACBE83ED0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C0544D10-4E72-43F8-A5A4-0F3ACBE83ED0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A62A97F-E122-49CB-8BA9-CA49AC0A4D51}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A62A97F-E122-49CB-8BA9-CA49AC0A4D51}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A62A97F-E122-49CB-8BA9-CA49AC0A4D51}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A62A97F-E122-49CB-8BA9-CA49AC0A4D51}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
