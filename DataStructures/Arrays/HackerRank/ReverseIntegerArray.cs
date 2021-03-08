@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Linq;
+using Common;
+
 namespace DataStructures.Arrays.HackerRank
 {
     public static class ReverseIntegerArray

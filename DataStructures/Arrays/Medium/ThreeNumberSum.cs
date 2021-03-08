@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using static System.Console;
+using Common;
 
 namespace DataStructures.Medium
 {
@@ -26,9 +27,7 @@ namespace DataStructures.Medium
                 }
 
                 Write("],");
-
-                
-
+               
             }
             Write(" ]");
             ReadLine();

@@ -11,5 +11,11 @@
     <Folder Include="DynamicProgramming\" />
     <Folder Include="Sort\Easy\" />
     <Folder Include="Tests\" />
+    <Folder Include="Recursion\Easy\" />
+    <Folder Include="Recursion\Medium\" />
+    <Folder Include="Recursion\Hard\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Common.csproj" />
   </ItemGroup>
 </Project>

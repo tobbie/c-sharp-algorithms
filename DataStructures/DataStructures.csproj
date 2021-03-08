@@ -22,5 +22,9 @@
     <Folder Include="Arrays\HackerRank\" />
     <Folder Include="Arrays\LeetCode\" />
     <Folder Include="Interfaces\" />
+    <Folder Include="Strings\LeetCode\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Common.csproj" />
   </ItemGroup>
 </Project>
