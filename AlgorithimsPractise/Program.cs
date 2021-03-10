@@ -10,7 +10,8 @@ namespace AlgorithimsPractise
 	{
 		static void Main(string[] args)
 		{
-			PowerSet.Run();
+			Mnemonics.Run();
+			//PowerSet.Run();
 
 			//Permutation.Run();
 			//ProductSum.Run();
