@@ -23,6 +23,8 @@
     <Folder Include="Arrays\LeetCode\" />
     <Folder Include="Interfaces\" />
     <Folder Include="Strings\LeetCode\" />
+    <Folder Include="LinkedLists\Easy\" />
+    <Folder Include="LinkedLists\Medium\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Common\Common.csproj" />
