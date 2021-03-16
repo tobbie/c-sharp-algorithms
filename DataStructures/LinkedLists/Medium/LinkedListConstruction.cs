@@ -3,31 +3,26 @@ namespace DataStructures.LinkedLists.Medium
 {
     public class LinkedListConstruction
     {
-
 		public class DoublyLinkedList
 		{
 			public Node Head;
 			public Node Tail;
 
-			public void SetHead(Node node)
-			{
-				// Write your code here.
+			public void SetHead(Node node){
 				InsertBefore(this.Head, node);
 			}
 
-			public void SetTail(Node node)
-			{
+			public void SetTail(Node node){
 				InsertAfter(this.Tail, node);
 			}
 
-			public void InsertBefore(Node node, Node nodeToInsert)
-			{				
-				// Write your code here.
+			public void InsertBefore(Node node, Node nodeToInsert){				
 				if (node == null){
 					Head = nodeToInsert;
 					Tail = Head;
 
-				} else if(node.Prev != null) {
+				}
+				else if(node.Prev != null) {
 
 				}
 				else if(node.Prev == null) {
@@ -37,8 +32,7 @@ namespace DataStructures.LinkedLists.Medium
 				}
 			}
 
-			public void InsertAfter(Node node, Node nodeToInsert)
-			{
+			public void InsertAfter(Node node, Node nodeToInsert){
 				if (node == null){
 					Tail = nodeToInsert;
 					Head = Tail;
@@ -54,39 +48,23 @@ namespace DataStructures.LinkedLists.Medium
 				}
 			}
 
-			public void InsertAtPosition(int position, Node nodeToInsert)
-			{
+			public void InsertAtPosition(int position, Node nodeToInsert){
 				// Write your code here.
 			}
 
-			public void RemoveNodesWithValue(int value)
-			{
+			public void RemoveNodesWithValue(int value){
 				// Write your code here.
 			}
 
-			public void Remove(Node node)
-			{
+			public void Remove(Node node){
 				// Write your code here.
 			}
 
-			public bool ContainsNodeWithValue(int value)
-			{
+			public bool ContainsNodeWithValue(int value){
 				// Write your code here.
 				return false;
-			}
-
-			//not useful now.
-			private void HandleNullNode(Node node) {
-				if (node == null) {
-					this.Head = node;
-					this.Tail = this.Head;
-					return;
-				}												
-			}
+			}			
 		}
-
-
-
 
 		public class Node
         {
@@ -94,13 +72,9 @@ namespace DataStructures.LinkedLists.Medium
             public Node Prev;
             public Node Next;
 
-            public Node(int value)
-            {
+            public Node(int value){
                 this.Value = value;
             }
         }
-    }
-
-
-  
+    }  
 }
