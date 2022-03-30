@@ -8,13 +8,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlgorithimsPractise.Tests", "AlgorithimsPractise.Tests\AlgorithimsPractise.Tests.csproj", "{EC5A6948-DDD3-4844-B2E3-66F5DD0DF200}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algorithims", "Algorithims\Algorithims.csproj", "{9722AB11-5056-402D-A4AD-4BEDA6157F89}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataStructures", "DataStructures\DataStructures.csproj", "{C0544D10-4E72-43F8-A5A4-0F3ACBE83ED0}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{4A62A97F-E122-49CB-8BA9-CA49AC0A4D51}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{997BF54C-B8AC-4DB5-A288-FE712A2DE0FB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataStructures.Tests", "DataStructures.Tests\DataStructures.Tests.csproj", "{A6ECD592-6A77-486E-9BC4-CBF364DC17E4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -26,10 +28,6 @@ Global
 		{5B8DC148-CD3F-45B5-9071-B90BBD7863FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5B8DC148-CD3F-45B5-9071-B90BBD7863FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5B8DC148-CD3F-45B5-9071-B90BBD7863FD}.Release|Any CPU.Build.0 = Release|Any CPU
-		{EC5A6948-DDD3-4844-B2E3-66F5DD0DF200}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EC5A6948-DDD3-4844-B2E3-66F5DD0DF200}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EC5A6948-DDD3-4844-B2E3-66F5DD0DF200}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EC5A6948-DDD3-4844-B2E3-66F5DD0DF200}.Release|Any CPU.Build.0 = Release|Any CPU
 		{9722AB11-5056-402D-A4AD-4BEDA6157F89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{9722AB11-5056-402D-A4AD-4BEDA6157F89}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9722AB11-5056-402D-A4AD-4BEDA6157F89}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -42,5 +40,12 @@ Global
 		{4A62A97F-E122-49CB-8BA9-CA49AC0A4D51}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4A62A97F-E122-49CB-8BA9-CA49AC0A4D51}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4A62A97F-E122-49CB-8BA9-CA49AC0A4D51}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6ECD592-6A77-486E-9BC4-CBF364DC17E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6ECD592-6A77-486E-9BC4-CBF364DC17E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6ECD592-6A77-486E-9BC4-CBF364DC17E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6ECD592-6A77-486E-9BC4-CBF364DC17E4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A6ECD592-6A77-486E-9BC4-CBF364DC17E4} = {997BF54C-B8AC-4DB5-A288-FE712A2DE0FB}
 	EndGlobalSection
 EndGlobal

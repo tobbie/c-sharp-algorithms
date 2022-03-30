@@ -8,7 +8,7 @@ namespace Common
     public static class Util
     { 
 
-        public static void PrintList(List<int> list) {
+        public static void PrintList<T>(IEnumerable<T> list) {
 
             Write("[");
 
@@ -21,7 +21,7 @@ namespace Common
             WriteLine();
         }
 
-        public static void PrintValue<T>(T value) {
+        public static void PrintValue<T>(T value){
 
             WriteLine();
             Write($"value is , {value.ToString()}");
