@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
@@ -23,8 +23,16 @@
     <Folder Include="Arrays\LeetCode\" />
     <Folder Include="Interfaces\" />
     <Folder Include="Strings\LeetCode\" />
+    <Folder Include="LinkedLists\Easy\" />
+    <Folder Include="LinkedLists\Medium\" />
+    <Folder Include="LinkedLists\Hard\" />
+    <Folder Include="LinkedLists\LeetCode\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Common\Common.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="LinkedLists\Hard\" />
+    <None Remove="LinkedLists\LeetCode\" />
   </ItemGroup>
 </Project>
