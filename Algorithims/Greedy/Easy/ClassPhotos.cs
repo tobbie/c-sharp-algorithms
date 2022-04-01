@@ -11,7 +11,7 @@ namespace Algorithims.Greedy.Easy
         {         
            redShirtHeights.Sort((x, y) => y.CompareTo(x));
            blueShirtHeights.Sort((x, y) => y.CompareTo(x));
-
+           
             var backRow = new List<int>();
             var frontRow = new List<int>();
 
@@ -33,9 +33,9 @@ namespace Algorithims.Greedy.Easy
                 else
                     return false;
             }
-            return true;
-                 
-            
+            return true;          
         }
     }
+
+   
 }
