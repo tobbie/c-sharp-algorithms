@@ -8,7 +8,6 @@
     <Folder Include="Sort\" />
     <Folder Include="Recursion\" />
     <Folder Include="Search\" />
-    <Folder Include="DynamicProgramming\" />
     <Folder Include="Sort\Easy\" />
     <Folder Include="Recursion\Easy\" />
     <Folder Include="Recursion\Medium\" />
