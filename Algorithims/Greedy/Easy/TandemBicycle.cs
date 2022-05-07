@@ -23,8 +23,6 @@ namespace Algorithims.Greedy.Easy
                 total += Math.Max(redShirtSpeeds[index], blueShirtSpeeds[jIndex]);
                 jIndex--;
             }
-
-
             return total;
         }
     }

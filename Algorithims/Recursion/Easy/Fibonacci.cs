@@ -4,7 +4,7 @@ using System.Diagnostics;
 using System.Threading;
 using static System.Console;
 
-namespace Algorithims.Recursion
+namespace Algorithims.Recursion.Easy
 {
 	public static class Fibonacci
 	{
@@ -16,8 +16,8 @@ namespace Algorithims.Recursion
 				var sw = new Stopwatch();
 				int number = int.Parse(ReadLine());
 				sw.Start();
-				Thread.Sleep(1);
-				WriteLine($"Fibonacci is : {OptimalRecusiveNthFib(number)}");
+				//Thread.Sleep(1);
+				WriteLine($"Fibonacci is : {FibBottomUp(number)}");
 
 
 				WriteLine();
@@ -29,17 +29,15 @@ namespace Algorithims.Recursion
 		}
 
 		//O(2^n) time O(n) space
-		private static int GetNthFib(int n) {
+		private static long GetNthFib(int n) {
 			// Write your code here.
 
 			if (n <= 0)
-				return -1;
-			else if (n == 1)
 				return 0;
-			else if (n == 2)
+			else if (n == 1  || n == 2)
 				return 1;
-
-			return GetNthFib(n - 1) + GetNthFib(n - 2);
+			else 
+				return GetNthFib(n - 1) + GetNthFib(n - 2);
 		}
 
 
@@ -67,5 +65,48 @@ namespace Algorithims.Recursion
 				return memoizeDict[n];
 			}			         
         }
+
+		public static long Fib(int n) {
+			var memo = new long?[n + 1];
+			return GetFib(n, memo);
+			
+		}
+
+		private static long GetFib(int n, long?[] memo) {
+			long result;
+
+			if (memo[n] != null)
+				return (long)memo[n];
+
+			if (n == 0)
+			    result = 0;
+			else if (n == 1 || n == 2)
+				result = 1;
+			else
+				 result = GetFib(n - 1, memo) + GetFib(n - 2, memo);
+
+			memo[n] = result;
+
+			return result;
+
+		}
+
+		public static long FibBottomUp(int n) {
+			if (n <= 0)
+				return 0;
+			else if (n == 1 || n == 2)
+				return 1;
+
+			var result = new long[n + 1];
+			result[0] = 0;
+			result[1] = 1;
+
+			for (int index = 2; index < result.Length; index++)
+				result[index] = result[index - 1] + result[index - 2];
+
+			return result[n];
+
+            
+		}
     }
 }

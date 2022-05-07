@@ -3,6 +3,9 @@ using DataStructures.Strings.LeetCode;
 using Algorithims.Recursion;
 using DataStructures.Arrays.LeetCode;
 using Algorithims.Recursion.Medium;
+using Algorithims.Recursion.Easy;
+using Algorithims.DynamicProgramming.Medium;
+using Common;
 
 namespace AlgorithimsPractise
 {
@@ -10,13 +13,16 @@ namespace AlgorithimsPractise
 	{
 		static void Main(string[] args)
 		{
-			PowerSet.Run();
-
+			//var array = LevenshteinDistance.MinimumEdits("abc", "yabd");
+		//	Util.Print2D(array);
+			//PowerSet.Run();
+			
+			//Fibonacci.Run();
 			//Permutation.Run();
 			//ProductSum.Run();
 
 
-			//Factorial.Run();
+			Factorial.Run();
 		 // RunLengthEncoding.Run();
 		 //GroupAnagrams.Run();
 		 //ValidAnagram.Run();

@@ -3,11 +3,13 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Threading;
 using static System.Console;
+using System.Numerics;
 
-namespace Algorithims.Recursion
+namespace Algorithims.Recursion.Easy
 {
     public static class Factorial
     {
+        public static Dictionary<int, long> Memo = new Dictionary<int, long>();
         public static void Run()
         {
 
@@ -18,7 +20,7 @@ namespace Algorithims.Recursion
                 int number = int.Parse(ReadLine());
                 sw.Start();
                 Thread.Sleep(1);
-                WriteLine($"Facrtorial is : {GetFactorial(number)}");
+                WriteLine($"Facrtorial is : {GetFactorialIterative(number)}");
 
 
                 WriteLine();
@@ -30,20 +32,21 @@ namespace Algorithims.Recursion
 
         private static long GetFactorial(int number)
         {
-            var memomizedDict = new Dictionary<int, long>();
-            memomizedDict.Add(1, 1);
-            return GetFactorial(number, memomizedDict);
+            //var memomizedDict = new Dictionary<int, long>();
+
+            Memo.TryAdd(1, 1);
+            return GetFactorial(number, Memo);
 
         }
 
-        private static long GetFactorial(int number, Dictionary<int, long> memomizedDict)
+        private static long GetFactorial(int number, Dictionary<int, long> memo)
         {
-            if (memomizedDict.ContainsKey(number))
-                return memomizedDict[number];
+            if (memo.ContainsKey(number))
+                return memo[number];
             else
             {
-                memomizedDict.Add(number, GetFactorial(number * (number - 1), memomizedDict));
-                return memomizedDict[number];
+                memo.Add(number,  number * GetFactorial(number - 1, memo));
+                return memo[number];
             }
         }
 
@@ -53,6 +56,24 @@ namespace Algorithims.Recursion
                 return 1;
             else
                 return number * GetFactorial2(number - 1);
+        }
+
+        public static BigInteger GetFactorialIterative(int number)
+        {
+            if (number < 1)
+                number = Math.Abs(number);
+
+            if (number == 1 || number == 0)
+                return 1;
+            else
+            {
+                BigInteger result = 1;
+                for (int index = 2; index <= number; index++)
+                    result *= index;
+                return result;
+            }
+            
+           
         }
     }
 }
