@@ -12,7 +12,6 @@
     <Folder Include="Arrays\" />
     <Folder Include="LinkedLists\" />
     <Folder Include="Trees\" />
-    <Folder Include="Stacks\" />
     <Folder Include="Queues\" />
     <Folder Include="Graphs\" />
     <Folder Include="HashTables\" />

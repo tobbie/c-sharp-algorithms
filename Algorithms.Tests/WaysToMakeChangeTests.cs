@@ -37,5 +37,18 @@ namespace Algorithms.Tests
 
             Assert.Equal(4, actual);
         }
+
+        [Fact]
+        public void ShouldReturnMinus1() {
+            //arrange
+            int n = 7;
+            var denoms = new int[] {4, 2};
+
+            //act
+            var actual = MinumNumberOfCoins.MinimumCoins(n, denoms);
+
+            //assert
+            Assert.Equal(-1, actual);
+        }
     }
 }

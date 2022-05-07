@@ -25,5 +25,7 @@ namespace Algorithims.DynamicProgramming.Medium
 
             return ways[n];
         }
+
+       
     }
 }

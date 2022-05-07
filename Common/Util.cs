@@ -58,8 +58,31 @@ namespace Common
             WriteLine("\n]");
         }
 
+        public static void Print2D<T>(T[,] array)
+        {
+
+            WriteLine("[");
+            for (int i = 0; i < array.GetLength(0); i++)
+            {
+                Write("[");
+                for (int j = 0; j < array.GetLength(1); j++)
+                {
+                    Write($"{ array[i, j]}, ");
+
+                }
+                WriteLine("]");
+               
+
+
+            }
+            WriteLine("\n]");
+
+            ReadLine();
+        }
+
+    
 
     }
 
-    
+
 }

@@ -7,6 +7,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Algorithims\Algorithims.csproj" />
+    <ProjectReference Include="..\Common\Common.csproj" />
     <ProjectReference Include="..\DataStructures\DataStructures.csproj" />
   </ItemGroup>
 </Project>
