@@ -1,6 +1,7 @@
 ﻿using System;
 using Xunit;
 using DataStructures.Stacks.Medium;
+using System.Collections.Generic;
 
 namespace Algorithms.Tests.DataStructureTests
 {
@@ -8,8 +9,8 @@ namespace Algorithms.Tests.DataStructureTests
     {
         [Theory]
         [InlineData(5, 2, 7)]
-   
-       
+
+
         public void Push(int number1, int number2, int number3) {
             //arrange
             var stack = new MinMaxStack();
@@ -32,7 +33,7 @@ namespace Algorithms.Tests.DataStructureTests
         }
 
         [Theory]
-        [InlineData(5, 7, 2, 2,7, 1, 5)]
+        [InlineData(5, 7, 2, 2, 7, 1, 5)]
         public void ShouldPop(int val1, int val2, int val3, int expected1, int expected2, int expected3, int expected4) {
             //arrange
             var stack = new MinMaxStack();
@@ -53,5 +54,35 @@ namespace Algorithms.Tests.DataStructureTests
             Assert.Equal(expected3, actual3);
             Assert.Equal(expected4, actual4);
         }
+
+        [Theory]
+        [InlineData(new int[]{3, 5, 4, 4, 3, 1, 3, 2},"WEST", new int[]{0, 1})]
+        public void CanSeeSunset( int [] buildings, string direction, int[] exepctedResult) {
+
+            //arrange
+
+
+            //act
+            var actualResult = SunsetViews.Views(buildings, direction);
+
+            //assert
+            Assert.Equal(exepctedResult, actualResult);
+        }
+
+        [Theory]
+        [InlineData(new int[] { 3, 5, 4, 4, 3, 1, 3, 2 }, "EAST", new int[] { 1, 3, 6, 7 })]
+        public void CanSeeSunsetEast(int[] buildings, string direction, int[] exepctedResult)
+        {
+
+            //arrange
+
+
+            //act
+            var actualResult = SunsetViews.Views(buildings, direction);
+
+            //assert
+            Assert.Equal(exepctedResult, actualResult);
+        }
+
     }
 }
