@@ -1,6 +1,7 @@
 ﻿using System;
 using Xunit;
 using DataStructures.Stacks.Medium;
+using System.Linq;
 using System.Collections.Generic;
 
 namespace Algorithms.Tests.DataStructureTests
@@ -82,6 +83,20 @@ namespace Algorithms.Tests.DataStructureTests
 
             //assert
             Assert.Equal(exepctedResult, actualResult);
+        }
+
+        [Theory]
+        [InlineData(new int[] {-5, 2, -2, 4, 3, 1 }, new int[] { -5, -2, 1, 2, 3, 4})]
+        public void CorrectlySortsStack(int[] inputStack, int[]sortedList)
+        {
+            //arrange
+
+            //act
+            var actualList =  SortStack.Sort(inputStack.ToList());
+
+            //assert
+            Assert.Equal(sortedList, actualList.ToArray());
+
         }
 
     }
