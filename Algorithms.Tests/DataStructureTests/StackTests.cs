@@ -1,6 +1,7 @@
-﻿using System;
-using Xunit;
+﻿
 using DataStructures.Stacks.Medium;
+using Xunit;
+using DataStructures.Stacks.Hard;
 using System.Linq;
 using System.Collections.Generic;
 
@@ -97,6 +98,66 @@ namespace Algorithms.Tests.DataStructureTests
             //assert
             Assert.Equal(sortedList, actualList.ToArray());
 
+        }
+
+        [Theory]
+        [InlineData(new int[] {2, 5, -3, -4, 6, 7, 2 }, new int[] {5, 6, 6, 6, 7, -1, 5 })]
+        public void ShouldFindNextGreaterThan(int [] array, int[] expected) {
+            //arrange
+
+            //act
+            var actual = NextGreaterThan.FindNexGreaterThan(array);
+
+            //assert
+            Assert.Equal(expected, actual);
+        }
+
+        [Theory]
+        [InlineData("/foo/../test/../test/../foo//bar/./baz", "/foo/bar/baz")]
+        [InlineData("foo/../..", "..")]
+        [InlineData("./..", "..")]
+        [InlineData("/foo/bar/..", "/foo")]
+        [InlineData("/foo/bar/baz/././.", "/foo/bar/baz")]
+        [InlineData("../../foo/bar/baz", "../../foo/bar/baz")]
+        [InlineData("/../../foo/../../bar/baz", "/bar/baz")]
+        [InlineData("../../../this////one/./../../is/../../going/../../to/be/./././../../../just/eight/double/dots/../../../../../..", "../../../../../../../..")]
+        public void TestShortenPath(string path, string expected)
+        {
+            var actual = ShortenPath.Shorten(path);
+
+            Assert.Equal(expected, actual);
+        }
+
+        [Theory]
+        [InlineData("/", "/")]
+        [InlineData("/foo/../test/../test/../foo//bar/./baz", "/foo/bar/baz")]
+        [InlineData("foo/../..", "..")]
+        [InlineData("./..", "..")]
+        [InlineData("/foo/bar/..", "/foo")]
+        [InlineData("/foo/bar/baz/././.", "/foo/bar/baz")]
+        [InlineData("../../foo/bar/baz", "../../foo/bar/baz")]
+        [InlineData("/../../foo/../../bar/baz", "/bar/baz")]
+        [InlineData("../../../this////one/./../../is/../../going/../../to/be/./././../../../just/eight/double/dots/../../../../../..", "../../../../../../../..")]
+
+        public void TestShorten2Path(string path, string expected)
+        {
+            var actual = ShortenPath.Shorten2(path);
+
+            Assert.Equal(expected, actual);
+        }
+
+        [Theory]
+        [InlineData(new int[] {1, 3, 3, 2, 4, 1, 5, 3, 2 }, 9)]
+        [InlineData(new int[] { 2, 1, 2 }, 3)]
+        public void ShouldReturnLargestRectangleArea(int []buildings, int expected)
+        {
+            //arrange
+
+            //act
+            var actual = LargestRectangleUnderSkyline.LargestRectangleArea(buildings);
+
+            //assert
+            Assert.Equal(expected, actual);
         }
 
     }
