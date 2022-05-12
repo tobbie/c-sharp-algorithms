@@ -29,6 +29,8 @@ namespace DataStructures.Stacks.Medium
 			if (list.Count > 0)
 				return list.Last.Value;
 
+			
+
 			return -1;
 		}
 
