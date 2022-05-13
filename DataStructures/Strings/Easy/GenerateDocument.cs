@@ -8,6 +8,7 @@ namespace DataStructures.Strings.Easy
 {
      public class GenerateDocument
     {
+       // O(n + m) time, O(c) space, where c is the no of unique characters, n is the number if charcters in characters, m is the number of characters in document.
         public static bool CanGenerate(string characters, string document)
         {
             //build frequency table of characters

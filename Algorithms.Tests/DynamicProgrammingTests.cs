@@ -24,11 +24,11 @@ namespace Algorithms.Tests
         [Fact]
         public void MinimumJumpsTest() {
             //arrange
-            //  int[] array = new int[] { 3, 4, 2, 1, 2, 3, 7, 1, 1, 1, 3 };
+              int[] array = new int[] { 3, 4, 2, 1, 2, 3, 7, 1, 1, 1, 3 };
 
             //int[] array = new int[] { 3, 2, 1, 0, 4 };
 
-            int[] array = new int[] { 2, 3, 1, 1, 4};
+           // int[] array = new int[] { 2, 3, 1, 1, 4};
             int expected = 4;
 
             //act
