@@ -1,6 +1,7 @@
 ﻿using System;
 using Xunit;
 using DataStructures.Strings.Easy;
+using DataStructures.Strings.Meduim;
 
 namespace DataStructures.Tests
 {
@@ -31,6 +32,17 @@ namespace DataStructures.Tests
             var actual = GenerateDocument.CanGenerate(characters, document);
 
             Assert.False(actual);
+        }
+
+
+        [Theory]
+        [InlineData("AlgoExpert is the best!", "best! the is AlgoExpert")]
+        [InlineData("4    whitespaces", "whitespaces    4")]
+        public void ShouldReverseString(string inputString, string expected)
+        {
+            var actual = ReverseWords.Reverse(inputString);
+
+            Assert.Equal(expected, actual);
         }
 
     }
