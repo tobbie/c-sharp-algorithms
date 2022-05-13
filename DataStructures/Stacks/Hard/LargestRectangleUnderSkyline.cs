@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace DataStructures.Stacks.Hard
 {
-   public class LargestRectangleUnderSkyline
+    public class LargestRectangleUnderSkyline
     {
         //O(n^2) time O(1) space
-        public static int LargestRectangleArea(int [] inputArray)
+        public static int LargestRectangleArea(int[] inputArray)
         {
             if (inputArray.Length == 0)
                 return 0;
@@ -19,7 +19,7 @@ namespace DataStructures.Stacks.Hard
             int rightPosition;
             int currentWidth;
 
-            for(int index = 0; index < inputArray.Length; index++)
+            for (int index = 0; index < inputArray.Length; index++)
             {
                 leftPosition = index - 1;
                 rightPosition = index + 1;
@@ -33,7 +33,7 @@ namespace DataStructures.Stacks.Hard
                     else
                         break;
                     leftPosition--;
-                    
+
                 }
 
                 //expand right ------->
@@ -51,6 +51,33 @@ namespace DataStructures.Stacks.Hard
             }
 
             return maxArea;
+        }
+
+        public static int LargestRectangleArea2(List<int> buildings)
+        {
+            if (buildings.Count == 0)
+                return 0;
+
+            var stack = new List<int>();
+            int maxArea = 0;
+            buildings.Add(0);
+
+            for (int index = 0; index < buildings.Count; index++)
+            {
+                while(stack.Count != 0  && buildings[stack[stack.Count -1]] >= buildings[index])             
+                {
+                    int pillarHeight = buildings[stack[stack.Count - 1]];
+                    stack.RemoveAt(stack.Count - 1);
+                    int width = stack.Count == 0 ? index : (index - stack[stack.Count - 1]) -1;
+
+                    maxArea = Math.Max(width * pillarHeight, maxArea);
+                }
+
+                stack.Add(index);
+            }
+
+            return maxArea;
+
         }
     }
 }
