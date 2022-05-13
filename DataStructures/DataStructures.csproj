@@ -5,8 +5,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Strings\" />
-    <Folder Include="Strings\Easy\" />
     <Folder Include="Strings\Meduim\" />
     <Folder Include="Strings\Hard\" />
     <Folder Include="Arrays\" />

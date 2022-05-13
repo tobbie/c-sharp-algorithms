@@ -160,5 +160,18 @@ namespace Algorithms.Tests.DataStructureTests
             Assert.Equal(expected, actual);
         }
 
+        [Theory]
+        [InlineData(new int[] { 1, 3, 3, 2, 4, 1, 5, 3, 2 }, 9)]
+        [InlineData(new int[] { 2, 1, 2 }, 3)]
+        public void ShouldReturnLargestRectangleArea2(int[] buildings, int expected)
+        {
+            //arrange
+
+            //act
+            var actual = LargestRectangleUnderSkyline.LargestRectangleArea2(buildings.ToList());
+            //assert
+            Assert.Equal(expected, actual);
+        }
+
     }
 }

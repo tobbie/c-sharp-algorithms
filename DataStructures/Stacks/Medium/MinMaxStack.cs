@@ -26,6 +26,8 @@ namespace DataStructures.Stacks.Medium
 
         public int Peek()
 		{
+			
+
 			if (list.Count > 0)
 				return list.Last.Value;
 
