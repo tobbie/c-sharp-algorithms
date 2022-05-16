@@ -8,7 +8,7 @@ namespace DataStructures.Strings.Meduim
 {
    public class ReverseWords
     {
-        //(O(n + m) or O(n) time, O(m) space 
+        //O(n) time, O(n) space 
         public static string Reverse(string str)
         {
             if (str.Length == 0 || str.Length == 1)
@@ -32,7 +32,7 @@ namespace DataStructures.Strings.Meduim
                 rightPointer--;
 
             }
-
+            
            return string.Join("", stringList);
 
         }
