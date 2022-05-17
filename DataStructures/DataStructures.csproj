@@ -5,15 +5,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Strings\Meduim\" />
     <Folder Include="Strings\Hard\" />
-    <Folder Include="Arrays\" />
     <Folder Include="LinkedLists\" />
     <Folder Include="Trees\" />
     <Folder Include="Queues\" />
     <Folder Include="Graphs\" />
     <Folder Include="HashTables\" />
-    <Folder Include="Arrays\Easy\" />
     <Folder Include="Arrays\Medium\" />
     <Folder Include="Arrays\Hard\" />
     <Folder Include="Arrays\HackerRank\" />
