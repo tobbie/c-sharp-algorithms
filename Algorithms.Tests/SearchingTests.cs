@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Xunit;
-using Algorithims.Search;
+using Algorithims.Search.Easy;
 
 namespace Algorithms.Tests
 {
