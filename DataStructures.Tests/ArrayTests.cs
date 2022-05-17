@@ -26,6 +26,14 @@ namespace DataStructures.Tests
             Assert.Equal("Python", actual);
         }
 
+        [Theory]
+        [InlineData(new int[] {5, 7, 1,  1, 2, 3, 22}, 20)]
+        public void TestNonConstructibleChange(int [] array, int expected)
+        {
+            var actual = NonConstrutibleChange.FindMinimumChange(array);
+
+            Assert.Equal(expected, actual);
+        }
     }
     
 }

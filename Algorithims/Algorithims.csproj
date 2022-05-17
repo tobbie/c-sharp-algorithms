@@ -6,7 +6,6 @@
 
   <ItemGroup>
     <Folder Include="Recursion\" />
-    <Folder Include="Search\" />
     <Folder Include="Recursion\Easy\" />
     <Folder Include="Recursion\Medium\" />
     <Folder Include="Recursion\Hard\" />
