@@ -7,6 +7,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{386B4A69-64D2-4310-AED1-ADD84973D304}"
 	ProjectSection(SolutionItems) = preProject
 		README.md = README.md
+		.github\workflows\starter.yml = .github\workflows\starter.yml
 	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Algorithims", "Algorithims\Algorithims.csproj", "{9722AB11-5056-402D-A4AD-4BEDA6157F89}"
@@ -19,7 +20,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{997BF54C
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataStructures.Tests", "DataStructures.Tests\DataStructures.Tests.csproj", "{A6ECD592-6A77-486E-9BC4-CBF364DC17E4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algorithms.Tests", "Algorithms.Tests\Algorithms.Tests.csproj", "{B37A2DC6-318A-44C5-A318-53D197AB0C71}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Algorithms.Tests", "Algorithms.Tests\Algorithms.Tests.csproj", "{B37A2DC6-318A-44C5-A318-53D197AB0C71}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
