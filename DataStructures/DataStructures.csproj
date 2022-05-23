@@ -5,17 +5,26 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="HashTables\**" />
+    <Compile Remove="Interfaces\**" />
+    <Compile Remove="Queues\**" />
+    <EmbeddedResource Remove="HashTables\**" />
+    <EmbeddedResource Remove="Interfaces\**" />
+    <EmbeddedResource Remove="Queues\**" />
+    <None Remove="HashTables\**" />
+    <None Remove="Interfaces\**" />
+    <None Remove="Queues\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="Strings\Hard\" />
     <Folder Include="LinkedLists\" />
     <Folder Include="Trees\" />
-    <Folder Include="Queues\" />
     <Folder Include="Graphs\" />
-    <Folder Include="HashTables\" />
     <Folder Include="Arrays\Medium\" />
     <Folder Include="Arrays\Hard\" />
     <Folder Include="Arrays\HackerRank\" />
     <Folder Include="Arrays\LeetCode\" />
-    <Folder Include="Interfaces\" />
     <Folder Include="Strings\LeetCode\" />
     <Folder Include="LinkedLists\Easy\" />
     <Folder Include="LinkedLists\Medium\" />

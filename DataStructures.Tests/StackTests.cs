@@ -3,9 +3,8 @@ using DataStructures.Stacks.Medium;
 using Xunit;
 using DataStructures.Stacks.Hard;
 using System.Linq;
-using System.Collections.Generic;
 
-namespace Algorithms.Tests.DataStructureTests
+namespace DataStructure.Tests
 {
     public class StackTests
     {
