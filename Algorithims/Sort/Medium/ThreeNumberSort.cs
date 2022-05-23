@@ -21,46 +21,18 @@ namespace Algorithims.Sort.Medium
             }
 
             int orderIndex = 0;
-
-            /**
-            for (int index = 0; index < array.Length; index++)
-            {
-                if (!table.ContainsKey(order[orderIndex]))
-                {
-                    orderIndex++;
-                    continue;
-                }
-               
-                if (table[order[orderIndex]] == 0)
-                         orderIndex++;
-
-
-
-                array[index] = order[orderIndex];
-                table[order[orderIndex]] -= 1;
-            }
-            **/
-
             int arrayIndex = 0;
 
             while(arrayIndex  < array.Length && orderIndex < order.Length)
             {
-                if (!table.ContainsKey(order[orderIndex]))
-                {
-                    orderIndex++;
-                    
-                }
-                else if (table[order[orderIndex]] == 0)
-                {
-                    orderIndex++;
-                }
+                if (!table.ContainsKey(order[orderIndex]) || table[order[orderIndex]] == 0)
+                    orderIndex++;                         
                 else
                 {
                     array[arrayIndex] = order[orderIndex];
                     table[order[orderIndex]] -= 1;
                     arrayIndex++;
-                }                 
-                
+                }                                
             }
 
             return array;
