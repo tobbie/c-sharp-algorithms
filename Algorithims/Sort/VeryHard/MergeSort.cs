@@ -19,9 +19,17 @@ namespace Algorithims.Sort.VeryHard
             var leftHalf = array[..middleIndex];
             var rightHalf = array[middleIndex..];
 
+          //  var left = new int[middleIndex];
+         //   var right = new int[array.Length - middleIndex];
+
+         //   Array.Copy(array, 0, left, 0, middleIndex);
+          //  Array.Copy(array, middleIndex, right, 0, array.Length - middleIndex);
+
+            var leftMerge = DoMergeSort(leftHalf);
+            var rightMerge = DoMergeSort(rightHalf);
          
          
-            return MergeSortedArrays(DoMergeSort(leftHalf), DoMergeSort(rightHalf));
+            return MergeSortedArrays(leftMerge, rightMerge);
         }
 
         private static int[] MergeSortedArrays(int[] leftHalf, int[] rightHalf)
@@ -62,4 +70,6 @@ namespace Algorithims.Sort.VeryHard
 
         }
     }
+
+   
 }
