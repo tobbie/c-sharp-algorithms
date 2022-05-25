@@ -5,6 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 using Xunit;
 using Algorithims.Search.Easy;
+using Algorithims.Search.Medium;
+using Algorithims.Search.Hard;
 
 namespace Algorithms.Tests
 {
@@ -19,5 +21,45 @@ namespace Algorithms.Tests
 
             Assert.Equal(expected, actual);
         }
+
+        [Theory]
+        [InlineData(44, new int[] {3, 3 })]
+        public void ShouldFindNumberInSortedMatrix(int target, int[] expected)
+        {
+            //var actual = BinarySearch.Find(array, target);
+            //arrange
+            var matrix = new int[,] { { 1, 4, 7, 12, 15, 1000 }, { 2, 5, 19, 31, 32, 1001 }, { 3, 9, 24, 33, 35, 1002 }, { 40, 41, 42, 44, 45, 1003 }, { 99, 100, 103, 106, 128, 1004 } };
+
+            var actual = SearchSortedMatrix.Search(matrix, target);
+
+            Assert.Equal(expected, actual);
+        }
+
+
+        [Theory]
+        [InlineData(245, new int[] { -1, -1 })]
+        public void ShouldNotFindNumberInSortedMatrix(int target, int[] expected)
+        {
+            //var actual = BinarySearch.Find(array, target);
+            //arrange
+            var matrix = new int[,] { { 1, 4, 7, 12, 15, 1000 }, { 2, 5, 19, 31, 32, 1001 }, { 3, 9, 24, 33, 35, 1002 }, { 40, 41, 42, 44, 45, 1003 }, { 99, 100, 103, 106, 128, 1004 } };
+
+            var actual = SearchSortedMatrix.Search(matrix, target);
+
+            Assert.Equal(expected, actual);
+        }
+
+        [Theory]
+        [InlineData(new int[] { 45, 61, 71, 72, 73, 0, 1, 21, 33, 37 }, 33, 8)]
+        [InlineData(new int[] { 61, 71, 72, 73, 0, 21, 33, 45, 45 }, 33, 6)]
+        public void ShouldUseShiftedBinarySearch(int[] array, int target, int expected)
+        {
+            var actual = ShiftedBinarySearch.Find(array, target);
+
+            Assert.Equal(expected, actual);
+        }
+
+
+
     }
 }
