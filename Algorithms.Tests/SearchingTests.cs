@@ -59,6 +59,44 @@ namespace Algorithms.Tests
             Assert.Equal(expected, actual);
         }
 
+        [Theory]
+       // [InlineData(new int[] { 0, 1, 21, 33, 45, 45, 45, 45, 45, 45, 61, 71, 73 }, 45, new int[] {4, 9})]
+      //  [InlineData(new int[] { 5, 7, 7, 8, 8, 10 }, 5, new int[] { 0,0})]
+        [InlineData(new int[] { 5, 7, 7, 8, 8, 10 }, 8, new int[] { 3, 4 })]
+
+        public void ShouldSearchForRange(int[] array, int target, int[] expected)
+        {
+            var actual = SearchForRange.Find(array, target);
+
+            Assert.Equal(expected, actual);
+        }
+
+        [Theory]
+         [InlineData(new int[] { 0, 1, 21, 33, 45, 45, 45, 45, 45, 45, 61, 71, 73 }, 45, new int[] {4, 9})]
+         [InlineData(new int[] { 5, 7, 7, 8, 8, 10 }, 5, new int[] { 0,0})]
+        [InlineData(new int[] { 5, 7, 7, 8, 8, 10 }, 8, new int[] { 3, 4 })]
+
+        public void ShouldSearchForRangeOptimally(int[] array, int target, int[] expected)
+        {
+            var actual = SearchForRange.FindRecrusively(array, target);
+
+            Assert.Equal(expected, actual);
+        }
+
+        [Theory]
+        [InlineData(new int[] { 0, 1, 21, 33, 45, 45, 45, 45, 45, 45, 61, 71, 73 }, 45, new int[] { 4, 9 })]
+        [InlineData(new int[] { 5, 7, 7, 8, 8, 10 }, 5, new int[] { 0, 0 })]
+        [InlineData(new int[] { 5, 7, 7, 8, 8, 10 }, 8, new int[] { 3, 4 })]
+
+        public void ShouldSearchForRangeOptimally2(int[] array, int target, int[] expected)
+        {
+            var actual = SearchForRange.FindIteratively(array, target);
+
+            Assert.Equal(expected, actual);
+        }
+
+
+
 
 
     }
