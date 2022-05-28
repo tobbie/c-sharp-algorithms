@@ -95,6 +95,16 @@ namespace Algorithms.Tests
             Assert.Equal(expected, actual);
         }
 
+    //[ 2, 3, 5,6, 7, 8, 9]
+        [Theory]
+        [InlineData(new int[] {8, 5, 2, 9, 7, 6, 3 }, 3, 5)]
+        public void ShouldQuickSelect(int[] array, int k, int expected)
+        {
+            var actual =  QuickSelect.Find(array, k);
+
+            Assert.Equal(expected, actual);
+        }
+
 
 
 
