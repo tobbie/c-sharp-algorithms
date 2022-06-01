@@ -17,7 +17,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Strings\Hard\" />
     <Folder Include="LinkedLists\" />
     <Folder Include="Trees\" />
     <Folder Include="Graphs\" />

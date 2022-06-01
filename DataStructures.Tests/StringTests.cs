@@ -1,14 +1,15 @@
-﻿using System;
-using Xunit;
+﻿using Xunit;
 using DataStructures.Strings.Easy;
 using DataStructures.Strings.Meduim;
+using DataStructures.Strings.Hard;
+using System.Linq;
 
 namespace DataStructures.Tests
 {
-   public class StringTests
+    public class StringTests
     {
         [Theory]
-        [InlineData("abcdcaf", 1 )]
+        [InlineData("abcdcaf", 1)]
         public void ShoudReturnFirstNonRepeatingCharacter(string input, int expected)
         {
             var actual = NonRepeatingCharacter.FirstNonRepeatingCharacter(input);
@@ -42,6 +43,53 @@ namespace DataStructures.Tests
         {
             var actual = ReverseWords.Reverse(inputString);
 
+            Assert.Equal(expected, actual);
+        }
+
+        [Theory]
+        [InlineData("1921680", new string[] {"1.9.216.80", "1.92.16.80", "1.92.168.0", "19.2.16.80", "19.2.168.0", "19.21.6.80",
+            "19.21.68.0", "19.216.8.0", "192.1.6.80", "192.1.68.0", "192.16.8.0" })]
+        public void ShouldReturnValidIps(string input, string[] expected)
+        {
+            var actual = ValidIPAddresses.Generate(input);
+            Assert.Equal(expected.ToList(), actual);
+            Assert.Equal(expected.Length, actual.Count);
+        }
+
+        [Theory]
+        [InlineData("1921680", 11)]
+        public void ShouldReturnValidIps2(string input, int expected)
+        {
+            var actual = ValidIPAddresses.Generate(input);
+           
+            Assert.Equal(expected, actual.Count);
+        }
+
+        [Theory]
+        [InlineData(new string[] {"this", "that", "did", "deed", "them!", "a"}, new char[] {'t', 't', 'h', 'i', 's', 'a', 'd', 'd', 'e', 'e', 'm', '!'})]
+        public void ShouldReturnMinimumCharacters(string[] words, char[] expected)
+        {
+            var actual = MinimumCharactersForWords.MinimumCharacters(words);
+
+            Assert.Equal(expected.ToList(), actual.ToList());
+        }
+
+        [Theory]
+        [InlineData("clementisacap", "mentisac")]
+        [InlineData("oluwatobiloba", "luwatobi")]
+        public void ShouldReturnLongesSubstring(string input, string expected)
+        {
+            var sut = new LongestSubstringWithoutDuplication();
+            var actual = sut.Find(input);
+            Assert.Equal(expected, actual);
+        }
+
+        [Theory]
+       [InlineData("testthis is a testtest to see if testestest it works", "test", "_test_this is a _testtest_ to see if _testestest_ it works")]
+        [InlineData("this is a test to see if it works and test", "test", "this is a _test_ to see if it works and _test_")]
+        public void ShouldAddUnderscoresToString(string input, string substring, string expected)
+        {
+            var actual = UnderscorifySubstring.Underscorify(input, substring);
             Assert.Equal(expected, actual);
         }
 
