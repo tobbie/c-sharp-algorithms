@@ -105,6 +105,15 @@ namespace Algorithms.Tests
             Assert.Equal(expected, actual);
         }
 
+        [Theory]
+        [InlineData(new int[] { -5, -3, 2, 3, 4, 5, 9 }, 2)]
+        public void ShouldReturnIndexEqualsValue(int[] array,int expected)
+        {
+            var actual = IndexEqualsValue.Find(array);
+
+            Assert.Equal(expected, actual);
+        }
+
 
 
 
