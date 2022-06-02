@@ -18,7 +18,6 @@
 
   <ItemGroup>
     <Folder Include="LinkedLists\" />
-    <Folder Include="Trees\" />
     <Folder Include="Graphs\" />
     <Folder Include="Arrays\Medium\" />
     <Folder Include="Arrays\Hard\" />
