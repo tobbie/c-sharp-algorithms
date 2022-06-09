@@ -17,16 +17,13 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="LinkedLists\" />
     <Folder Include="Graphs\" />
-    <Folder Include="Arrays\Medium\" />
     <Folder Include="Arrays\Hard\" />
     <Folder Include="Arrays\HackerRank\" />
     <Folder Include="Arrays\LeetCode\" />
     <Folder Include="Strings\LeetCode\" />
     <Folder Include="LinkedLists\Easy\" />
     <Folder Include="LinkedLists\Medium\" />
-    <Folder Include="LinkedLists\Hard\" />
     <Folder Include="LinkedLists\LeetCode\" />
   </ItemGroup>
   <ItemGroup>

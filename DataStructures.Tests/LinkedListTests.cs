@@ -1,6 +1,6 @@
-﻿using System;
-using Xunit;
+﻿using DataStructures.LinkedLists.Hard;
 using DataStructures.LinkedLists.Medium;
+using Xunit;
 
 namespace DataStructures.Tests
 {
@@ -163,6 +163,26 @@ namespace DataStructures.Tests
             //Assert
             Assert.Null(actual);
             Assert.Null(actual2);
+        }
+
+        [Fact]
+        public void ShouldRotateList()
+        {
+            //arrange
+            var list = new SinglyLinkedList();
+            list.Add(new ListNode(0));
+            list.Add(new ListNode(1));
+            list.Add(new ListNode(2));
+            list.Add(new ListNode(3));
+            list.Add(new ListNode(4));
+            list.Add(new ListNode(5));
+            //act
+
+            var actual = RotateLinkedList.Rotate(list.Head, -2);
+            
+            //assert
+            Assert.Equal(2, actual.Value);
+          
         }
 
 

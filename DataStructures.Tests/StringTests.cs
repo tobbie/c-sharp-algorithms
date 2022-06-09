@@ -93,5 +93,15 @@ namespace DataStructures.Tests
             Assert.Equal(expected, actual);
         }
 
+        [Theory]
+        [InlineData("xxyxxy", "gogopowerrangergogopowerranger", new string[] {"go", "powerranger"})]
+      //  [InlineData("yyxyyx", "gogopowerrangergogopowerranger", new string[] { "go", "powerranger" })]
+        [InlineData("xyyx", "powerrangergogopowerranger", new string[] { "powerranger", "go" })]
+        public void ShouldMatchStingWithPattern(string pattern,  string input, string[] expected)
+        {
+            var actual = PatternMatcher.IsMatch(input, pattern);
+            Assert.Equal(expected.ToList(), actual);
+        }
+
     }
 }
