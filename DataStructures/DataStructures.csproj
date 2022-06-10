@@ -17,7 +17,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Graphs\" />
     <Folder Include="Arrays\Hard\" />
     <Folder Include="Arrays\HackerRank\" />
     <Folder Include="Arrays\LeetCode\" />

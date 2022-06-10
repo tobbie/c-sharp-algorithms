@@ -1,6 +1,7 @@
 ﻿using DataStructures.LinkedLists.Hard;
 using DataStructures.LinkedLists.Medium;
 using Xunit;
+using DataStructures.LinkedLists.VeryHard;
 
 namespace DataStructures.Tests
 {
@@ -183,6 +184,34 @@ namespace DataStructures.Tests
             //assert
             Assert.Equal(2, actual.Value);
           
+        }
+
+        [Fact]
+        public void ShouldTestLRUCache()
+        {
+            //arrange
+            var sut = new LRUCache(3);
+            sut.InsertKeyValuePair("b", 2);
+            sut.InsertKeyValuePair("a", 1);
+            sut.InsertKeyValuePair("c", 3);
+            //act
+
+            var actual1 = sut.GetMostRecentKey();
+            var actual2 = sut.GetValueFromKey("a").value;
+            var actual3 = sut.GetMostRecentKey();
+            sut.InsertKeyValuePair("d", 4);
+            var actual4 = sut.GetValueFromKey("b");
+            sut.InsertKeyValuePair("a", 5);
+            var actual5 = sut.GetValueFromKey("a");
+            //assert
+
+            Assert.Equal("c", actual1);
+            Assert.Equal(1, actual2);
+            Assert.Equal("a", actual3);
+            Assert.Null(actual4);
+            Assert.Equal(5, actual5.value);
+
+
         }
 
 
