@@ -8,8 +8,14 @@ namespace DataStructures.Graphs
 {
     public class NumberOfIslands
     {
+       
         public static int FindIslands(int[][] matrix)
         {
+            var hashTable = new HashSet<int>();
+            if (!hashTable.Contains(3))
+                hashTable.Add(4);
+            
+          
             int numberOfIslands = 0;
             for (int row = 0; row < matrix.Length; row++)
             {
