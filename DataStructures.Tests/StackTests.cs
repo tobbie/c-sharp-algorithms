@@ -172,5 +172,14 @@ namespace DataStructure.Tests
             Assert.Equal(expected, actual);
         }
 
+        [Theory]
+        [InlineData("((){}()[({})])", true)]
+        [InlineData("((){}()[({})])(", false)]
+        public void ShouldValidateBrackets(string input, bool expected)
+        {
+            var actual = BalancedBrackets.IsValid(input);
+            Assert.Equal(expected, actual);
+        }
+
     }
 }

@@ -141,5 +141,14 @@ namespace DataStructures.Tests
           Assert.Equal(expected, actual);
         }
 
+        [Theory]
+     //   [InlineData(new char[] {'t','h','e', ' ', 's', 'k', 'y', ' ', 'i','s', ' ', 'b','l', 'u', 'e'}, new char[] {'b', 'l', 'u', 'e', ' ', 'i', 's', ' ', 's','k', 'y', ' ', 't', 'h', 'e'})]
+        [InlineData(new char[] {'h','i'}, new char[] { 'h', 'i' })]
+        public void ShouldReverseWord2(char[] input, char[] expected)
+        {
+            var actual = ReverseWordsTwo.Reverse(input);
+            Assert.Equal(expected, actual);
+        }
+
     }
 }
