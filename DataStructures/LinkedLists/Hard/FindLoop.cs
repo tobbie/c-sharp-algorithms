@@ -4,24 +4,24 @@ namespace DataStructures.LinkedLists.Hard
     public class FindLoopInLinkedList
     {
         // F = X = D + P, S = 2X = 2D + 2P; T = D + P + R
-        public static LinkedList FindLoop(LinkedList head)
+        public static ListNode FindLoop(ListNode head)
         {
             // intialise first pointer to next node from the head, second pointer to two nodes from the head
-            var first = head.next;
-            var second = head.next.next;
+            var first = head.Next;
+            var second = head.Next.Next;
 
             //move thru singly linked list until first and second pointer overlap (point to the same node in the loop)
             while (first != second) {
-                first = first.next;
-                second = second.next.next;
+                first = first.Next;
+                second = second.Next.Next;
             }
 
             // move first or second pointer to the head.
             first = head;
 
             while (first != second) {
-                first = first.next;
-                second = second.next;
+                first = first.Next;
+                second = second.Next;
             }
 
             //when first pointer overlaps with second pointer again,
@@ -33,14 +33,40 @@ namespace DataStructures.LinkedLists.Hard
         
     }
 
-    public class LinkedList
+    public class SinglyLinkedList
     {
-        public int value;
-        public LinkedList next = null;
+       
 
-        public LinkedList(int value)
-        {
-            this.value = value;
+        public ListNode Head { get; private set; }
+        public ListNode Tail { get; private set; }
+       
+        public void Add(ListNode node)
+        { 
+            if(Head == null)
+            {
+                Head = node;
+                Tail = Head;
+            }
+            else
+            {
+                Tail.Next = node;
+                Tail = node;
+            }
+                        
+            
         }
     }
+
+    public class ListNode
+    {
+        public int Value { get; private set; }
+        public  ListNode Next { get; set; }
+
+        public ListNode (int value)
+        {
+            Value = value;
+        }
+    }
+
+    
 }

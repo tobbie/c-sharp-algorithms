@@ -2,6 +2,7 @@
 using DataStructures.Strings.Easy;
 using DataStructures.Strings.Meduim;
 using DataStructures.Strings.Hard;
+using DataStructures.Strings.Microsoft;
 using System.Linq;
 
 namespace DataStructures.Tests
@@ -91,6 +92,53 @@ namespace DataStructures.Tests
         {
             var actual = UnderscorifySubstring.Underscorify(input, substring);
             Assert.Equal(expected, actual);
+        }
+
+        [Theory]
+        [InlineData("xxyxxy", "gogopowerrangergogopowerranger", new string[] {"go", "powerranger"})]
+      //  [InlineData("yyxyyx", "gogopowerrangergogopowerranger", new string[] { "go", "powerranger" })]
+        [InlineData("xyyx", "powerrangergogopowerranger", new string[] { "powerranger", "go" })]
+        public void ShouldMatchStingWithPattern(string pattern,  string input, string[] expected)
+        {
+            var actual = PatternMatcher.IsMatch(input, pattern);
+            Assert.Equal(expected.ToList(), actual);
+        }
+
+        [Theory]
+        [InlineData("A man, a plan, a canal: Panama", true)]
+        [InlineData("race a car", false)]
+        [InlineData(" ", true)]
+        public void ShouldTellIfStringIsPalindrome(string input, bool expected)
+        {
+            var actual = ValidPalindrome.IsValid(input);
+            
+            Assert.Equal(expected, actual);
+        }
+
+        [Theory]
+        [InlineData(" a good   example ", "example good a")]
+        public void ShouldReverseWords(string input, string expected)
+        {
+            var actual = ReverseWordsOne.Reverse(input);
+            Assert.Equal(expected, actual);
+        }
+
+        [Theory]
+        [InlineData("    -42", -42)]
+        [InlineData("0032", 32)]
+        [InlineData("    ", 0)]
+        [InlineData("   -", 0)]
+        [InlineData("4193 with words", 4193)]
+        [InlineData("words and 987", 0)]
+        [InlineData("20000000000000000000", int.MaxValue)]
+
+        public void ShouldCovertStringToInteger(string input,int expected)
+        {
+          var actual =  StringToInterger.ConvertString(input);
+            
+            
+
+          Assert.Equal(expected, actual);
         }
 
     }

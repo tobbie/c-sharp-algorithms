@@ -80,9 +80,9 @@ namespace Common
             ReadLine();
         }
 
-        public static void Swap(int[] array, int left, int right)
+        public static void Swap<T>(T[] array, int left, int right)
         {
-            int temp = array[left];
+            T temp = array[left];
             array[left] = array[right];
             array[right] = temp;
 

@@ -1,10 +1,9 @@
-﻿using System;
+﻿
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Xunit;
 using DataStructures.Trees.Medium;
+using DataStructures.Trees.Hard;
 
 namespace DataStructures.Tests
 {
@@ -31,6 +30,15 @@ namespace DataStructures.Tests
             var actual = sut.ReconstructTree(input.ToList());
 
             Assert.Equal(expected, actual.Value);
+        }
+
+        [Theory]
+        [InlineData(new int[] {10, 15, 8, 12, 94, 81, 5, 2, 11}, new int[] {10, 8, 5, 15, 2, 12, 11, 94, 81})]
+        public void ShouldBeTheSameBst(int[] arrayOne, int[]arrayTwo)
+        {
+            var actual = SameBst.IsSameBst(arrayOne.ToList(), arrayTwo.ToList());
+
+            Assert.True(actual);
         }
     }
 }

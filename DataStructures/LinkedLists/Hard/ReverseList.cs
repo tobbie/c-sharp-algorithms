@@ -7,15 +7,15 @@ namespace DataStructures.LinkedLists.Hard
 
         // 5 --> 4 --> 3 --> 2 --> 1 --> 0
 
-        public static LinkedList ReverseLinkedList(LinkedList head)
+        public static ListNode ReverseLinkedList(ListNode head)
         {
             // Write your code here.
-            LinkedList previousNode = null;
-            LinkedList currentNode = head;
+            ListNode previousNode = null;
+            ListNode currentNode = head;
 
             while (currentNode != null) {
-                LinkedList nextNode = currentNode.next;
-                currentNode.next = previousNode;
+                ListNode nextNode = currentNode.Next;
+                currentNode.Next = previousNode;
                 previousNode = currentNode;
                 currentNode = nextNode;
 

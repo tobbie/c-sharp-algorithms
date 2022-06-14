@@ -5,9 +5,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Recursion\" />
+    <Folder Include="Famous\Medium\" />
     <Folder Include="Recursion\Easy\" />
-    <Folder Include="Recursion\Medium\" />
     <Folder Include="Recursion\Hard\" />
   </ItemGroup>
   <ItemGroup>
