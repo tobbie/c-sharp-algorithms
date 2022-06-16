@@ -1,6 +1,7 @@
 ﻿using System;
 using Xunit;
 using Algorithims.DynamicProgramming.Medium;
+using Algorithims.DynamicProgramming.Hard;
 
 namespace Algorithms.Tests
 {
@@ -37,6 +38,15 @@ namespace Algorithms.Tests
 
             //assert
 
+            Assert.Equal(expected, actual);
+        }
+
+        [Theory]
+        [InlineData(new int[] {0, 8, 0, 0, 5, 0, 0, 10, 0, 0, 1, 1, 0, 3 }, 48)]
+        [InlineData(new int[] { 0, 1, 0, 2, 1, 0, 1,3,2,1,2,1  }, 6)]
+        public void ShouldReturnTrappedWater(int[] heights, int expected)
+        {
+            var actual = WaterArea.ComputeTrappedWater(heights);
             Assert.Equal(expected, actual);
         }
 

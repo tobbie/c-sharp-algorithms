@@ -88,6 +88,21 @@ namespace Common
 
         }
 
+        public static void Swap2<T>(T[] array, int left, int right)
+        {
+            while(left < right)
+            {
+                T temp = array[left];
+                array[left] = array[right];
+                array[right] = temp;
+
+                left++;
+                right--;
+
+            }
+
+        }
+
 
 
     }

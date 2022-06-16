@@ -47,6 +47,24 @@ namespace DataStructures.Tests
             Assert.Equal(expected, actual);
 
         }
+
+        [Fact]
+        public void ShouldRotateImage()
+        {
+            var matrix = new int[3][];
+            matrix[0] = new int[] { 1, 2, 3 };
+            matrix[1] = new int[] { 4, 5, 6 };
+            matrix[2] = new int[] { 7, 8, 9 };
+
+            var expected = new int[3][];
+            expected[0] = new int[] { 7, 4, 1 };
+            expected[1] = new int[] { 8, 5, 2 };
+            expected[2] = new int[] { 9, 6, 3 };
+
+            var actual = RotateImage.Rotate(matrix);
+            Assert.Equal(expected, actual);
+
+        }
     }
     
 }
