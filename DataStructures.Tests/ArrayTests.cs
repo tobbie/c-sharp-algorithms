@@ -65,6 +65,23 @@ namespace DataStructures.Tests
             Assert.Equal(expected, actual);
 
         }
+
+        [Fact]
+        public void ShouldSetMatrixZeros()
+        {
+            var matrix = new int[3][];
+            matrix[0] = new int[] { 1, 1, 1 };
+            matrix[1] = new int[] { 1, 0, 1 };
+            matrix[2] = new int[] { 1, 1, 1 };
+
+            var expected = new int[3][];
+            expected[0] = new int[] { 1, 0, 1 };
+            expected[1] = new int[] { 0, 0, 0 };
+            expected[2] = new int[] { 1, 0, 1 };
+
+            var actual = SetMatrixZeros.SetZeros(matrix);
+            Assert.Equal(expected, actual);
+        }
     }
     
 }

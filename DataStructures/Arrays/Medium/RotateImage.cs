@@ -23,10 +23,9 @@ namespace DataStructures.Arrays.Medium
                 }
             }
 
-            for (int row = 0; row < length; row++)
-            {
+            for (int row = 0; row < length; row++)         
                 Util.Swap2(matrix[row], 0, length - 1);
-            }
+            
 
             return matrix;
         }

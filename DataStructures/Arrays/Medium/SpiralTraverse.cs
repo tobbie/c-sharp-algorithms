@@ -10,6 +10,10 @@ namespace DataStructures.Arrays.Medium
         public static void Run() {
 
             var array = new int[,] { { 1, 2, 3}, { 12, 13, 4}, {11, 14, 5}, {10, 15, 6 }, {9, 8, 7 } };
+            var jagged = new int[3][3];
+
+            
+
             Util.PrintList(Traverse(array));
 
         }
