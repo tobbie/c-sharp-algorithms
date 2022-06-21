@@ -49,5 +49,7 @@ namespace DataStructures.Stacks.Medium
 
             return stack.Count == 0;
         }
+
+        
     }
 }

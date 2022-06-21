@@ -150,5 +150,13 @@ namespace DataStructures.Tests
             Assert.Equal(expected, actual);
         }
 
+        [Theory]
+        [InlineData("abaxyzzyxf", "xyzzyx")]
+        public void ShouldReturnLongestPlaindromicSubString(string input, string expected)
+        {
+            var actual = PalindromicSubstring.LongestPalindoromeSubString(input);
+            Assert.Equal(expected, actual);
+        }
+
     }
 }
