@@ -4,19 +4,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DataStructures.Graphs
+namespace DataStructures.Graphs.Hard
 {
     public class RemoveIslands
     {
-        public static int[][]  Remove(int[][] matrix)
+        public static int[][] Remove(int[][] matrix)
         {
             var onesConnectedToBorder = new bool[matrix.Length][];
-            for (int row = 0; row < matrix.Length; row++)        
+            for (int row = 0; row < matrix.Length; row++)
                 onesConnectedToBorder[row] = new bool[matrix[row].Length];
-            
-            for(int row = 0; row < matrix.Length; row++)
+
+            for (int row = 0; row < matrix.Length; row++)
             {
-                for(int col = 0; col < matrix[row].Length; col++)
+                for (int col = 0; col < matrix[row].Length; col++)
                 {
                     bool rowIsBorder = row == 0 || row == matrix.Length - 1;
                     bool colIsBorder = col == 0 || col == matrix[row].Length - 1;
@@ -35,9 +35,9 @@ namespace DataStructures.Graphs
 
             for (int row = 1; row < matrix.Length - 1; row++)
             {
-                for (int col = 1; col < matrix[row].Length -1; col++)
+                for (int col = 1; col < matrix[row].Length - 1; col++)
                 {
-                   
+
 
                     if (onesConnectedToBorder[row][col])
                         continue;
@@ -54,7 +54,7 @@ namespace DataStructures.Graphs
             var stack = new Stack<(int, int)>();
             stack.Push((startRow, startCol));
 
-            while(stack.Count > 0)
+            while (stack.Count > 0)
             {
                 var currentPosition = stack.Pop();
                 var (currentRow, currentColumn) = currentPosition;
@@ -67,7 +67,7 @@ namespace DataStructures.Graphs
                 onesConnectedToBorder[currentRow][currentColumn] = true;
 
                 var neighbours = GetNeigbhours(matrix, currentRow, currentColumn);
-                foreach(var item in neighbours)
+                foreach (var item in neighbours)
                 {
                     var (row, column) = item;
                     if (matrix[row][column] != 1)
@@ -80,7 +80,7 @@ namespace DataStructures.Graphs
             }
         }
 
-        private static List<(int,int)> GetNeigbhours(int[][] matrix, int currentRow, int currentColumn)
+        private static List<(int, int)> GetNeigbhours(int[][] matrix, int currentRow, int currentColumn)
         {
             var neighbours = new List<(int, int)>();
 

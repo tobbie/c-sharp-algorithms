@@ -22,7 +22,6 @@
     <Folder Include="Arrays\LeetCode\" />
     <Folder Include="Strings\LeetCode\" />
     <Folder Include="LinkedLists\Easy\" />
-    <Folder Include="LinkedLists\Medium\" />
     <Folder Include="LinkedLists\LeetCode\" />
   </ItemGroup>
   <ItemGroup>
