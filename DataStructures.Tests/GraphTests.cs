@@ -3,12 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using DataStructures.Graphs;
+using DataStructures.Graphs.Easy;
+using DataStructures.Graphs.Hard;
+using DataStructures.Graphs.Medium;
 using Xunit;
 
 namespace DataStructures.Tests
 {
-   public class GraphTests
+    public class GraphTests
     {
         [Fact]
         public void ShouldTestIslands()
@@ -55,6 +57,63 @@ namespace DataStructures.Tests
             //assert
 
             Assert.Equal(7, actual);
+        }
+
+        [Fact]
+        public void ShouldTellGraphHasPath()
+        {
+            //arrange
+            var graph = new Dictionary<char, List<char>>();
+            graph.Add('f', new List<char> { 'g', 'i' });
+            graph.Add('g', new List<char> { 'h'});
+            graph.Add('h', new List<char> {  });
+            graph.Add('i', new List<char> { 'g', 'k' });
+            graph.Add('j', new List<char> { 'i' });
+            graph.Add('k', new List<char> {  });
+
+            //act
+
+            var actual = HasPath.GraphHasPathBFS(graph, 'f', 'k');
+
+            Assert.True(actual);
+        }
+
+        [Fact]
+        public void ShouldTellGraphHasPath2()
+        {
+            //arrange
+            var graph = new Dictionary<char, List<char>>();
+            graph.Add('f', new List<char> { 'g', 'i' });
+            graph.Add('g', new List<char> { 'h' });
+            graph.Add('h', new List<char> { });
+            graph.Add('i', new List<char> { 'g', 'k' });
+            graph.Add('j', new List<char> { 'i' });
+            graph.Add('k', new List<char> { });
+
+            //act
+
+            var actual = HasPath.GraphHasPathDFS(graph, 'f', 'j');
+
+            Assert.False(actual);
+        }
+
+        [Fact]
+        public void ShouldTellLargestComponent()
+        {
+            var graph = new Dictionary<int, List<int>>();
+            graph.Add(0, new List<int> { 8, 1, 5 });
+            graph.Add(1, new List<int> { 0});
+            graph.Add(5, new List<int> { 0, 8});
+            graph.Add(8, new List<int> { 0,  5 });
+            graph.Add(2, new List<int> { 3, 4});
+            graph.Add(3, new List<int> { 2, 4 });
+            graph.Add(4, new List<int> { 3, 2 });
+
+            //act
+            var largestComp = new LargestComponent();
+           int actual = largestComp.GetLargestComponent(graph);
+            Assert.Equal(4, actual);
+        
         }
     }
 

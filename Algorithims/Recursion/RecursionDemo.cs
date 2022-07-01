@@ -8,7 +8,10 @@ namespace Algorithims.Recursion
         private static int _counter = 0;
 
         public static void Run() {
-            Inception();
+            //Inception();
+            string binary = FindBinary(233);
+            WriteLine(binary);
+            ReadLine();
         }
 
 
@@ -29,6 +32,23 @@ namespace Algorithims.Recursion
             _counter++;
            return Inception();
 
+        }
+
+        private static string FindBinary(int number, string result = "")
+        {
+            if (number == 0)
+                return result;
+
+            result = number % 2 + result;
+            return FindBinary(number / 2, result);        
+        }
+
+        private static int RecursiveSummation(int inputNumber)
+        {
+            if (inputNumber <= 1)
+                return 1;
+
+            return inputNumber + RecursiveSummation(inputNumber - 1);
         }
     }
 }

@@ -4,18 +4,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DataStructures.Graphs
+namespace DataStructures.Graphs.Hard
 {
     public class NumberOfIslands
     {
-       
+
         public static int FindIslands(int[][] matrix)
         {
             var hashTable = new HashSet<int>();
             if (!hashTable.Contains(3))
                 hashTable.Add(4);
-            
-          
+
+
             int numberOfIslands = 0;
             for (int row = 0; row < matrix.Length; row++)
             {
@@ -33,7 +33,7 @@ namespace DataStructures.Graphs
                 for (int column = 0; column < matrix[row].Length; column++)
                 {
                     if (matrix[row][column] == 2)
-                        numberOfIslands += 1;                  
+                        numberOfIslands += 1;
                 }
             }
 
@@ -44,9 +44,9 @@ namespace DataStructures.Graphs
         {
             var stack = new Stack<(int, int)>();
             stack.Push((startRow, startColumn));
-           
 
-            while(stack.Count > 0)
+
+            while (stack.Count > 0)
             {
                 var currentPosition = stack.Pop();
                 var (currentRow, currentColumn) = currentPosition;
@@ -54,9 +54,9 @@ namespace DataStructures.Graphs
 
                 if (alreadyVisited)
                     continue;
-               
-                
-                if(currentRow == startRow && currentColumn == startColumn) // this is a root node where DFS starts;
+
+
+                if (currentRow == startRow && currentColumn == startColumn) // this is a root node where DFS starts;
                     matrix[currentRow][currentColumn] = 2;
                 else
                     matrix[currentRow][currentColumn] = 0;
@@ -85,8 +85,8 @@ namespace DataStructures.Graphs
                 neigbhours.Add((row + 1, column));
 
             //look left
-            if(column -1 >= 0 && matrix[row][column -1] == 1)
-                neigbhours.Add((row, column -1));
+            if (column - 1 >= 0 && matrix[row][column - 1] == 1)
+                neigbhours.Add((row, column - 1));
 
             //look right
             if (column + 1 < columnLength && matrix[row][column + 1] == 1)

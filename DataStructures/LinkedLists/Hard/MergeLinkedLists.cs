@@ -40,6 +40,18 @@ namespace DataStructures.LinkedLists.Hard
 
             return headOne.Value < headTwo.Value ? headOne : headTwo;
         }
+
+        public static ListNode MergeKLists(ListNode[] lists)
+        {
+            var resultList = lists[0];
+
+            for (int i = 1; i < lists.Length; i++)
+            {
+                resultList = Merge(resultList, lists[i]);
+            }
+
+            return resultList;
+        }
     }
 
    
