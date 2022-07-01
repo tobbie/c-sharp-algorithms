@@ -8,7 +8,7 @@ using Algorithims.DynamicProgramming.Medium;
 using DataStructures.Graphs;
 using Common;
 
-namespace AlgorithimsPractise
+namespace ProgramEntryPoint
 {
 	class Program
 	{
