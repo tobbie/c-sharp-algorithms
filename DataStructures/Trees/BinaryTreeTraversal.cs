@@ -87,6 +87,8 @@ namespace DataStructures.Trees
                 result.Add(new List<int>());
 
             result[level].Add(node.Value);
+      
+            
         }
 
         

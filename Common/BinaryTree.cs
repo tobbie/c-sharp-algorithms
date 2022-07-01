@@ -15,6 +15,7 @@ namespace Common
         public T Value { get; private set; }
         public BTNode<T> Left { get; set; }
         public BTNode<T> Right { get; set; }
+        public BTNode<T> Next { get; set; }
 
         public BTNode(T value)
         {

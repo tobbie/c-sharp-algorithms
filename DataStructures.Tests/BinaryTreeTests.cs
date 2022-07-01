@@ -2,6 +2,7 @@
 
 using Xunit;
 using DataStructures.Trees.Easy;
+using DataStructures.Trees.Medium;
 using Common;
 using DataStructures.Trees;
 using System.Collections.Generic;
@@ -120,6 +121,54 @@ namespace DataStructures.Tests
             var expected = new List<char> { 'a', 'b', 'c', 'd', 'e', 'f' };
 
             var actual = BinaryTreeTraversal.BreadthFirstSearch(a);
+            Assert.Equal(expected, actual);
+        }
+
+        [Fact]
+        public void ShouldFindPath()
+        {
+            var a = new BTNode<char>('a');
+            var b = new BTNode<char>('b');
+            var c = new BTNode<char>('c');
+            var d = new BTNode<char>('d');
+            var e = new BTNode<char>('e');
+            var f = new BTNode<char>('f');
+
+            a.Left = b;
+            a.Right = c;
+            b.Left = d;
+            b.Right = e;
+            c.Right = f;
+
+            var expected = new List<char> { 'a', 'b', 'e'};
+
+            var actual = PathFinder.Find(a,'e');
+            Assert.Equal(expected, actual);
+        }
+
+        [Fact]
+        public void ShouldReturnAllTreePath()
+        {
+            var a = new BTNode<char>('a');
+            var b = new BTNode<char>('b');
+            var c = new BTNode<char>('c');
+            var d = new BTNode<char>('d');
+            var e = new BTNode<char>('e');
+            var f = new BTNode<char>('f');
+
+            a.Left = b;
+            a.Right = c;
+            b.Left = d;
+            b.Right = e;
+            c.Right = f;
+
+            var expected = new List<List<char>>();
+            expected.Add(new List<char>{  'a', 'b', 'd' });
+            expected.Add(new List<char> { 'a', 'b', 'e' });
+            expected.Add(new List<char> { 'a', 'c', 'f' });
+
+
+            var actual = AllTreePaths.TreePath(a);
             Assert.Equal(expected, actual);
         }
     }

@@ -70,7 +70,7 @@ namespace DataStructures.Trees.Medium
 
             currentSubtreeInfo.RootIndex += 1;
 
-            var leftSubtree = ReconstructTreeHelper(lowerBound, rootValue, preOrderTraversalValues, currentSubtreeInfo);
+            var leftSubtree = ReconstructTreeHelper(lowerBound, rootValue, preOrderTraversalValues, currentSubtreeInfo);  //[3, 9, 20, 15, 7]
             var rightSubtree = ReconstructTreeHelper(rootValue, upperBound, preOrderTraversalValues, currentSubtreeInfo);
             return new BST(rootValue, leftSubtree, rightSubtree);
 
