@@ -13,9 +13,14 @@ namespace DataStructures.Heaps.Medium
         {
             var result = new StringBuilder();
             var maxHeap = new PriorityQueue<char, int>(new IntMaxComparer());
-            maxHeap.Enqueue('a', a);
-            maxHeap.Enqueue('b', b);
-            maxHeap.Enqueue('c', c);
+            
+            if(a > 0)
+                maxHeap.Enqueue('a', a);
+            if(b > 0)
+                maxHeap.Enqueue('b', b);
+            if(c > 0)
+                maxHeap.Enqueue('c', c);
+
 
             while(maxHeap.Count > 0)
             {
@@ -44,9 +49,8 @@ namespace DataStructures.Heaps.Medium
             return result.ToString();
         }
 
-        private static bool IsMaxSequence(StringBuilder value, char currentChar)
-        {
-            return (value[^1] == value[^2]  && value[^1] == currentChar);
-        }
+        private static bool IsMaxSequence(StringBuilder value, char currentChar) =>
+             value[^1] == value[^2]  && value[^1] == currentChar;
+        
     }
 }
