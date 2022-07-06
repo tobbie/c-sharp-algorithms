@@ -158,5 +158,15 @@ namespace DataStructures.Tests
             Assert.Equal(expected, actual);
         }
 
+
+        [Theory]
+        [InlineData("scpcyxprxxsjyjrww", 42)]
+        [InlineData("kayka", 1)]
+        public void ShouldReturnMinumumPalindromSwaps(string input, int expected)
+        {
+            var actual = MimumumSwapsPalindrome.MinimumSwaps(input);
+            Assert.Equal(expected, actual);
+        }
+
     }
 }
