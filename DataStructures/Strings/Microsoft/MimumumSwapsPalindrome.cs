@@ -31,6 +31,7 @@ namespace DataStructures.Strings.Microsoft
             var stringArray1 = str.ToCharArray();
             int n = stringArray1.Length;
             int count = 0;
+
             for (int i = 0; i < n / 2; i++)
             {
                 int left = i;
@@ -52,7 +53,7 @@ namespace DataStructures.Strings.Microsoft
                 }
                 else
                  {
-                for (int j = right; j < n - left - 1; j++)
+                    for (int j = right; j < n - left - 1; j++)
                     {
                         Util.Swap(stringArray1, j, j + 1);
                         count++;

@@ -4,6 +4,7 @@ using DataStructures.Strings.Meduim;
 using DataStructures.Strings.Hard;
 using DataStructures.Strings.Microsoft;
 using System.Linq;
+using DataStructures.Microsoft;
 
 namespace DataStructures.Tests
 {
@@ -165,6 +166,27 @@ namespace DataStructures.Tests
         public void ShouldReturnMinumumPalindromSwaps(string input, int expected)
         {
             var actual = MimumumSwapsPalindrome.MinimumSwaps(input);
+            Assert.Equal(expected, actual);
+        }
+
+        [Theory]
+      //  [InlineData("3+2*2", 7)]
+        //[InlineData("4  2", 42)]
+        [InlineData("53", 53)]
+        public void ShouldDoBasicCalculation(string input, int expected)
+        {
+            var actual = BasicCalculator2.Calculate(input);
+            Assert.Equal(expected, actual);
+        }
+
+        [Theory]
+        [InlineData("3+2*2", 7)]
+        [InlineData("4  2", 42)]
+        [InlineData("53", 53)]
+        [InlineData("1+2 *3 -5/4", 6)]
+        public void ShouldDoBasicCalculation2(string input, int expected)
+        {
+            var actual = BasicCalculator2.CalculateOptimal(input);
             Assert.Equal(expected, actual);
         }
 
