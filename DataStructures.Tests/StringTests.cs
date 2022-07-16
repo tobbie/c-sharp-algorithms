@@ -190,5 +190,17 @@ namespace DataStructures.Tests
             Assert.Equal(expected, actual);
         }
 
+        [Theory]
+        [InlineData("3[a]2[bc]", "aaabcbc")]
+        [InlineData("3[a2[c]]", "accaccacc")]
+        [InlineData("2[abc]3[cd]ef", "abcabccdcdcdef")]
+
+        [InlineData("100[leetcode]", "leetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcode")]
+        public void ShouldDecodeString(string input, string expected)
+        {
+            var actual = DecodeString.Decode(input);
+            Assert.Equal(expected, actual);
+        }
+
     }
 }
