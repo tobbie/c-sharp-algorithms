@@ -10,11 +10,9 @@ namespace DataStructures.Microsoft
     {
         public static string Decode(string s)
         {
-
             var numbers = new Stack<int>();
             var stringList = new Stack<string>();
             string result = string.Empty;
-
             int index = 0;
             
             while (index < s.Length)
