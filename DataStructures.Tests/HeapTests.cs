@@ -15,5 +15,14 @@ namespace DataStructures.Tests
 
             Assert.Equal(expected, actual);
         }
+
+        [Theory]
+        [InlineData(new string[] {"i", "love", "leetcode", "i", "love", "coding"}, 2, new string[] {"i", "love"})]
+        public void ShouldReturnTopKFrequentWords(string[]words, int k, string[] expected)
+        {
+            var actual = TopKFrequentWords.TopFrequent(words, k);
+
+            Assert.Equal(expected, actual.ToArray());
+        }
     }
 }

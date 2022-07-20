@@ -4,6 +4,7 @@ using DataStructures.Strings.Meduim;
 using DataStructures.Strings.Hard;
 using DataStructures.Strings.Microsoft;
 using System.Linq;
+using DataStructures.Microsoft;
 
 namespace DataStructures.Tests
 {
@@ -62,12 +63,12 @@ namespace DataStructures.Tests
         public void ShouldReturnValidIps2(string input, int expected)
         {
             var actual = ValidIPAddresses.Generate(input);
-           
+
             Assert.Equal(expected, actual.Count);
         }
 
         [Theory]
-        [InlineData(new string[] {"this", "that", "did", "deed", "them!", "a"}, new char[] {'t', 't', 'h', 'i', 's', 'a', 'd', 'd', 'e', 'e', 'm', '!'})]
+        [InlineData(new string[] { "this", "that", "did", "deed", "them!", "a" }, new char[] { 't', 't', 'h', 'i', 's', 'a', 'd', 'd', 'e', 'e', 'm', '!' })]
         public void ShouldReturnMinimumCharacters(string[] words, char[] expected)
         {
             var actual = MinimumCharactersForWords.MinimumCharacters(words);
@@ -86,7 +87,7 @@ namespace DataStructures.Tests
         }
 
         [Theory]
-       [InlineData("testthis is a testtest to see if testestest it works", "test", "_test_this is a _testtest_ to see if _testestest_ it works")]
+        [InlineData("testthis is a testtest to see if testestest it works", "test", "_test_this is a _testtest_ to see if _testestest_ it works")]
         [InlineData("this is a test to see if it works and test", "test", "this is a _test_ to see if it works and _test_")]
         public void ShouldAddUnderscoresToString(string input, string substring, string expected)
         {
@@ -95,10 +96,10 @@ namespace DataStructures.Tests
         }
 
         [Theory]
-        [InlineData("xxyxxy", "gogopowerrangergogopowerranger", new string[] {"go", "powerranger"})]
-      //  [InlineData("yyxyyx", "gogopowerrangergogopowerranger", new string[] { "go", "powerranger" })]
+        [InlineData("xxyxxy", "gogopowerrangergogopowerranger", new string[] { "go", "powerranger" })]
+        //  [InlineData("yyxyyx", "gogopowerrangergogopowerranger", new string[] { "go", "powerranger" })]
         [InlineData("xyyx", "powerrangergogopowerranger", new string[] { "powerranger", "go" })]
-        public void ShouldMatchStingWithPattern(string pattern,  string input, string[] expected)
+        public void ShouldMatchStingWithPattern(string pattern, string input, string[] expected)
         {
             var actual = PatternMatcher.IsMatch(input, pattern);
             Assert.Equal(expected.ToList(), actual);
@@ -111,7 +112,7 @@ namespace DataStructures.Tests
         public void ShouldTellIfStringIsPalindrome(string input, bool expected)
         {
             var actual = ValidPalindrome.IsValid(input);
-            
+
             Assert.Equal(expected, actual);
         }
 
@@ -132,18 +133,18 @@ namespace DataStructures.Tests
         [InlineData("words and 987", 0)]
         [InlineData("20000000000000000000", int.MaxValue)]
 
-        public void ShouldCovertStringToInteger(string input,int expected)
+        public void ShouldCovertStringToInteger(string input, int expected)
         {
-          var actual =  StringToInterger.ConvertString(input);
-            
-            
+            var actual = StringToInterger.ConvertString(input);
 
-          Assert.Equal(expected, actual);
+
+
+            Assert.Equal(expected, actual);
         }
 
         [Theory]
-     //   [InlineData(new char[] {'t','h','e', ' ', 's', 'k', 'y', ' ', 'i','s', ' ', 'b','l', 'u', 'e'}, new char[] {'b', 'l', 'u', 'e', ' ', 'i', 's', ' ', 's','k', 'y', ' ', 't', 'h', 'e'})]
-        [InlineData(new char[] {'h','i'}, new char[] { 'h', 'i' })]
+        //   [InlineData(new char[] {'t','h','e', ' ', 's', 'k', 'y', ' ', 'i','s', ' ', 'b','l', 'u', 'e'}, new char[] {'b', 'l', 'u', 'e', ' ', 'i', 's', ' ', 's','k', 'y', ' ', 't', 'h', 'e'})]
+        [InlineData(new char[] { 'h', 'i' }, new char[] { 'h', 'i' })]
         public void ShouldReverseWord2(char[] input, char[] expected)
         {
             var actual = ReverseWordsTwo.Reverse(input);
@@ -158,5 +159,67 @@ namespace DataStructures.Tests
             Assert.Equal(expected, actual);
         }
 
+
+        [Theory]
+        [InlineData("scpcyxprxxsjyjrww", 42)]
+        [InlineData("kayka", 1)]
+        public void ShouldReturnMinumumPalindromSwaps(string input, int expected)
+        {
+            var actual = MimumumSwapsPalindrome.MinimumSwaps(input);
+            Assert.Equal(expected, actual);
+        }
+
+        [Theory]
+        //  [InlineData("3+2*2", 7)]
+        //[InlineData("4  2", 42)]
+        [InlineData("53", 53)]
+        public void ShouldDoBasicCalculation(string input, int expected)
+        {
+            var actual = BasicCalculator2.Calculate(input);
+            Assert.Equal(expected, actual);
+        }
+
+        [Theory]
+        [InlineData("3+2*2", 7)]
+        [InlineData("4  2", 42)]
+        [InlineData("53", 53)]
+        [InlineData("1+2 *3 -5/4", 6)]
+        public void ShouldDoBasicCalculation2(string input, int expected)
+        {
+            var actual = BasicCalculator2.CalculateOptimal(input);
+            Assert.Equal(expected, actual);
+        }
+
+        [Theory]
+        [InlineData("3[a]2[bc]", "aaabcbc")]
+        [InlineData("3[a2[c]]", "accaccacc")]
+        [InlineData("2[abc]3[cd]ef", "abcabccdcdcdef")]
+
+        [InlineData("100[leetcode]", "leetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcode")]
+        public void ShouldDecodeString(string input, string expected)
+        {
+            var actual = DecodeString.Decode(input);
+            Assert.Equal(expected, actual);
+        }
+
+        [Theory]
+        [InlineData(new char[]{'a', 'a', 'b', 'b', 'c', 'c', 'c'},6 )]
+        [InlineData(new char[] { 'a', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b'}, 4)]
+
+        public void ShouldCompressString(char[] input, int expected)
+        {
+            var actual = StringCompression.Compress(input);
+            Assert.Equal(expected, actual);
+        }
+
+        [Theory]
+        [InlineData(new char[] { 'a', 'a', 'b', 'b', 'c', 'c', 'c' }, 6)]
+        [InlineData(new char[] { 'a', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b' }, 4)]
+
+        public void ShouldCompressString2(char[] input, int expected)
+        {
+            var actual = StringCompression.Compress2(input);
+            Assert.Equal(expected, actual);
+        }
     }
 }

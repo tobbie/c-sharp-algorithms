@@ -21,7 +21,7 @@ namespace DataStructures.Graphs
         public GraphTraversal()
         {
             Graph = new Dictionary<char, List<char>>();
-            Graph.Add('a', new List<char> { 'c', 'b' });
+            Graph.Add('a', new List<char> { 'b', 'c' });
             Graph.Add('b', new List<char> { 'd' });
             Graph.Add('d', new List<char> { 'f' });
             Graph.Add('c', new List<char> { 'e' });
@@ -55,6 +55,15 @@ namespace DataStructures.Graphs
             WriteLine();
         }
 
+        public void DepthFirstRecursive(Dictionary<char,List<char>> graph, char source)
+        {
+            Write($"{source}");
+            foreach (var neigbhor in graph[source])
+            {
+                DepthFirstRecursive(graph, neigbhor);
+            }
+        
+        }
         public void BreadthFirstSearchPrint(Dictionary<char, List<char>> graph, char root)
         {
             /**

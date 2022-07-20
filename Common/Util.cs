@@ -104,6 +104,20 @@ namespace Common
         }
 
 
+        public static Dictionary<int, List<int>> BuildGraph(int number, int[][] array)
+        {
+            var graph = new Dictionary<int, List<int>>();
+
+            for (int i = 0; i < number; i++)
+                graph.Add(i, new List<int>());
+
+            foreach (var item in array)     
+                graph[item[0]].Add(item[1]);
+           
+            return graph;
+           
+        }
+
 
     }
 

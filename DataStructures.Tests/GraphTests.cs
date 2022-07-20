@@ -7,6 +7,7 @@ using DataStructures.Graphs.Easy;
 using DataStructures.Graphs.Hard;
 using DataStructures.Graphs.Medium;
 using Xunit;
+using DataStructures.Microsoft;
 
 namespace DataStructures.Tests
 {
@@ -116,6 +117,53 @@ namespace DataStructures.Tests
            int actual = largestComp.GetLargestComponent(graph);
             Assert.Equal(4, actual);
         
+        }
+
+        [Fact]
+        public void ShouldTellIfWordExists()
+        {
+            var board = new char[3][];
+            board[0] = new char[] { 'A', 'B', 'C', 'E' };
+            board[1] = new char[] { 'S', 'F', 'C', 'S' };
+            board[2] = new char[] { 'A', 'D', 'E', 'E' };
+
+
+            var actual = WordSearch.Exists(board, "ABCCED");
+
+            Assert.True(actual);
+
+        }
+
+        [Fact]
+        public void ShouldTellIfWordExists3()
+        {
+            var board = new char[3][];
+            board[0] = new char[] { 'A', 'B', 'C', 'E' };
+            board[1] = new char[] { 'S', 'F', 'E', 'S' };
+            board[2] = new char[] { 'A', 'D', 'E', 'E' };
+
+
+            // var actual = WordSearch.Exists(board, "ABCESEEEFS");
+            var actual = WordSearch.Exists(board, "ABCEFSADEESE");
+
+            Assert.True(actual);
+
+        }
+
+
+        [Fact]
+        public void ShouldTellIfWordExists2()
+        {
+            var board = new char[3][];
+            board[0] = new char[] { 'A', 'B', 'C', 'E' };
+            board[1] = new char[] { 'S', 'F', 'C', 'S' };
+            board[2] = new char[] { 'A', 'D', 'E', 'E' };
+
+
+            var actual = WordSearch.Exists(board, "ABCB");
+
+            Assert.False(actual);
+
         }
     }
 
