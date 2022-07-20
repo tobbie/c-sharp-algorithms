@@ -14,14 +14,15 @@ namespace ProgramEntryPoint
 	{
 		static void Main(string[] args)
 		{
-
-			/**
 			var graphTraversal = new GraphTraversal();
+			/**
+			
 			graphTraversal.DepthFirstSearchPrint(graphTraversal.Graph, 'a');
 			graphTraversal.BreadthFirstSearchPrint(graphTraversal.Graph, 'a');
 			**/
-
-			RecursionDemo.Run();
+			graphTraversal.DepthFirstRecursive(graphTraversal.Graph, 'a');
+			ReadLine();
+			//RecursionDemo.Run();
 
 
 			//var array = LevenshteinDistance.MinimumEdits("abc", "yabd");
