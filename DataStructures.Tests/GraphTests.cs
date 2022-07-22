@@ -8,6 +8,7 @@ using DataStructures.Graphs.Hard;
 using DataStructures.Graphs.Medium;
 using Xunit;
 using DataStructures.Microsoft;
+using DataStructures.Graphs;
 
 namespace DataStructures.Tests
 {
@@ -164,6 +165,21 @@ namespace DataStructures.Tests
 
             Assert.False(actual);
 
+        }
+
+        [Fact]
+        public void ShouldPrint2DGridWithDFS()
+        {
+            var grid = new int[4][];
+            grid[0] = new int[] { 1, 2, 3, 4 };
+            grid[1] = new int[] { 5, 6, 7, 8 };
+            grid[2] = new int[] { 9, 10, 11, 12 };
+            grid[3] = new int[] { 13, 14, 15, 16 };
+
+            var graphTraversal = new GraphTraversal();
+            var actual = graphTraversal.DepthFirstSearchGrid(grid);
+
+            Assert.Equal(16, actual.Length);
         }
     }
 
