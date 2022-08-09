@@ -45,7 +45,17 @@ namespace DataStructures.Trees.Medium
                 paths.Add(path);
             }
 
+           
             return paths;                    
+        }
+
+        private void Test()
+        {
+            var ways = new List<List<string>>();
+            string test = "test";
+            var list = new List<string>() { "one", "two" };
+            var concat = new List<string> { test }.Concat(list).ToList();
+                ;
         }
     }
 }

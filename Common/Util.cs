@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using static System.Console;
 using System.Linq;
+using System.Numerics;
 
 namespace Common
 { 
@@ -88,6 +89,16 @@ namespace Common
 
         }
 
+        public static void Reverse<T>(T[] array, int start, int end)
+        {
+            while(start < end)
+            {
+                Swap(array, start, end);
+                start++;
+                end--;
+            }
+        }
+
         public static void Swap2<T>(T[] array, int left, int right)
         {
             while(left < right)
@@ -116,6 +127,17 @@ namespace Common
            
             return graph;
            
+        }
+
+        public static BigInteger ConvertToBigInteger(string input)
+        {
+            BigInteger currentNumber = 0;
+            for (int i = 0; i < input.Length; i++)
+            {
+                currentNumber = currentNumber * 10 + (int)char.GetNumericValue(input[i]);
+            }
+
+            return currentNumber;
         }
 
 
