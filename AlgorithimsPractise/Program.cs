@@ -20,7 +20,7 @@ namespace ProgramEntryPoint
 			graphTraversal.DepthFirstSearchPrint(graphTraversal.Graph, 'a');
 			graphTraversal.BreadthFirstSearchPrint(graphTraversal.Graph, 'a');
 			**/
-			graphTraversal.DepthFirstRecursive(graphTraversal.Graph, 'a');
+			graphTraversal.DepthFirstSearchGrid(graphTraversal.Grid);
 			ReadLine();
 			//RecursionDemo.Run();
 

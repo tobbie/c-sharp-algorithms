@@ -17,6 +17,7 @@ namespace DataStructures.Graphs
 
         
         public Dictionary<char, List<char>> Graph { get; private set; }
+        public int[][] Grid { get; private set; }
 
         public GraphTraversal()
         {
@@ -27,6 +28,12 @@ namespace DataStructures.Graphs
             Graph.Add('c', new List<char> { 'e' });
             Graph.Add('e', new List<char> {  });
             Graph.Add('f', new List<char> { });
+
+            Grid =  new int[4][];
+            Grid[0] = new int[] { 1, 2, 3, 4 };
+            Grid[1] = new int[] { 5, 6, 7, 8 };
+            Grid[2] = new int[] { 9, 10, 11, 12 };
+            Grid[3] = new int[] { 13, 14, 15, 16 };
 
         }
         public void DepthFirstSearchPrint(Dictionary<char, List<char>> graph, char root)
@@ -90,6 +97,40 @@ namespace DataStructures.Graphs
             }
 
             ReadLine();
+        }
+
+        public int[] DepthFirstSearchGrid(int[][] grid)
+        {
+            List<int> result = new List<int>();
+            var visited = new HashSet<string>();
+
+            DfsGridHelper(0, 0, visited, grid, result);
+
+            foreach (var item in result)
+            {
+                Write($"{item},");
+            }
+            WriteLine();
+            return result.ToArray();
+        }
+
+        private void DfsGridHelper(int row, int col, HashSet<string> visited, int[][]grid, List<int> result)
+        {
+            if (row < 0 || row >= grid.Length || col < 0 || col >= grid[0].Length)
+                return;
+
+            if (visited.Contains($"{row},{col}"))
+                return;
+
+            visited.Add($"{row},{col}");
+
+            result.Add(grid[row][col]);
+
+            DfsGridHelper(row - 1, col, visited, grid, result);
+            DfsGridHelper(row + 1, col, visited, grid, result);
+            DfsGridHelper(row, col -1, visited, grid, result);
+            DfsGridHelper(row, col +1, visited, grid, result);
+
         }
             
             
