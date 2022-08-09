@@ -13,29 +13,22 @@ namespace MicrosoftInterview
       public static string RemoveDigit(string number, char digit)
         {
             BigInteger result = -1;
-
             for (int  i = 0;  i < number.Length;  i++)
             {
                 if (number[i] == digit)
                 {
                     BigInteger current = BuildNumber(number, i);
-                    result = current > result ? current : result;
-
-                    //Math.Max()
+                    result = current > result ? current : result;                 
                 }
             }
-
             return result.ToString();
         }
 
         private static BigInteger BuildNumber(string number, int index)
-        {
-            
+        {      
             var sb = new StringBuilder(number);
             sb.Remove(index, 1);
-            return BigInteger.Parse(sb.ToString());
-           // return Util.ConvertToBigInteger(sb.ToString());
-            
+            return BigInteger.Parse(sb.ToString());          
         }
     }
 }

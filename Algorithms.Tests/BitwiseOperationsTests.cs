@@ -25,7 +25,7 @@ namespace Algorithms.Tests
 
 
         [Theory]
-        [InlineData(new int[] { 2, 1, 3, 2 }, new int[] {1, 3})]
+        [InlineData(new int[] { 2, 1, 3, 2 }, new int[] {3, 1})]
         public void ShouldFindSingleNumbers(int[] input, int[] expected)
         {
             var actual = FindSingleNumbers.Find(input);
