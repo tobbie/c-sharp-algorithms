@@ -2,7 +2,7 @@
 using Xunit;
 using Algorithims.DynamicProgramming.Medium;
 using Algorithims.DynamicProgramming.Hard;
-using DataStructures.Microsoft;
+using MicrosoftInterview;
 using System.Linq;
 
 namespace Algorithms.Tests

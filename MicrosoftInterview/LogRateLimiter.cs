@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DataStructures.Microsoft
+namespace MicrosoftInterview
 {
     public class LogRateLimiter
     {

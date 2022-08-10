@@ -1,13 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 using DataStructures.Graphs.Easy;
 using DataStructures.Graphs.Hard;
 using DataStructures.Graphs.Medium;
 using Xunit;
-using DataStructures.Microsoft;
+using MicrosoftInterview;
 using DataStructures.Graphs;
 
 namespace DataStructures.Tests

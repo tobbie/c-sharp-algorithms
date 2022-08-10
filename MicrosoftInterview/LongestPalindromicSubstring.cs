@@ -1,6 +1,6 @@
-﻿using System;
+﻿
 
-namespace DataStructures.Strings.Microsoft
+namespace MicrosoftInterview
 {
     public class PalindromicSubstring
     {
