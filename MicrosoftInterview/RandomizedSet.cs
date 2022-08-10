@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace DataStructures.Microsoft
+namespace MicrosoftInterview
 {
     public class RandomizedSet
     {

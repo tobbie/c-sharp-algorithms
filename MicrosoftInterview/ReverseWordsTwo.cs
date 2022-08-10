@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Common;
 
-namespace DataStructures.Strings.Microsoft
+namespace MicrosoftInterview
 {
    public class ReverseWordsTwo
     {

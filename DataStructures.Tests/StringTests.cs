@@ -4,7 +4,7 @@ using DataStructures.Strings.Meduim;
 using DataStructures.Strings.Hard;
 using DataStructures.Strings.Microsoft;
 using System.Linq;
-using DataStructures.Microsoft;
+using MicrosoftInterview;
 
 namespace DataStructures.Tests
 {

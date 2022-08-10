@@ -1,6 +1,6 @@
 ﻿using System;
 using Xunit;
-using DataStructures.Microsoft;
+using MicrosoftInterview;
 
 namespace Algorithms.Tests
 {

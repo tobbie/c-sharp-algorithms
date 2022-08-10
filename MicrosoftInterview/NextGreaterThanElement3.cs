@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Common;
 
-namespace DataStructures.Microsoft
+namespace MicrosoftInterview
 {
     public class NextGreaterThanElement3
     {
