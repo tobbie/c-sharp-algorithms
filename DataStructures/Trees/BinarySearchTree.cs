@@ -1,6 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using static System.Console;
+﻿using static System.Console;
+
 namespace DataStructures.Trees
 {
     public class BinarySearchTree
