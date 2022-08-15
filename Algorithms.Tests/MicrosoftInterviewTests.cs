@@ -54,5 +54,13 @@ namespace Algorithms.Tests
             var actual = sut.NumberToWords(input);
             Assert.Equal(expected, actual);
         }
+
+        [Theory]
+        [InlineData("(1+(4+5+2)-3)+(6+8)", 23)]
+        public void ShouldCalculate(string input, int expected)
+        {
+            var actual = BasicCalculator.Calculate(input);
+            Assert.Equal(expected, actual);
+        }
     }
 }
