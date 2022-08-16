@@ -6,14 +6,13 @@ using System.Threading.Tasks;
 
 namespace MicrosoftInterview
 {
-   public class LFUCache
+    //explanation :  https://www.youtube.com/watch?v=iM4QKS4GxA4
+    public class LFUCache
     {
         private Dictionary<int, LinkedListNode<Item> > Cache { get; set; }
         private Dictionary<int, int> KeyCount { get; set; }
-
         private int Capacity { get; set; }
         private int MinCount { get; set; }
-
         private Dictionary<int, LinkedList<Item>> FrequencyMap { get; set; }
         public LFUCache(int capacity)
         {
@@ -23,7 +22,6 @@ namespace MicrosoftInterview
             FrequencyMap.Add(1, new LinkedList<Item>());
             KeyCount = new();
             Cache = new();
-
         }
 
         public int Get(int key)
