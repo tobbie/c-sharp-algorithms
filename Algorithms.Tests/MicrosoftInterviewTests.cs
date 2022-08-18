@@ -62,5 +62,14 @@ namespace Algorithms.Tests
             var actual = BasicCalculator.Calculate(input);
             Assert.Equal(expected, actual);
         }
+
+        [Theory]
+        [InlineData("abcdef", "a?c*f", true)]
+        [InlineData("", "*", true)]
+        public void ShouldMatchWildCard(string input, string pattern, bool expected)
+        {
+            var actual = WildcardMatching.IsMatch(input, pattern);
+            Assert.Equal(expected, actual);
+        }
     }
 }
