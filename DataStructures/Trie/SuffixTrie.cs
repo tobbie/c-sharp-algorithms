@@ -16,6 +16,7 @@ namespace DataStructures.Trie
             PopulateSuffixTrieFrom(str);
         }
 
+
         public void PopulateSuffixTrieFrom(string str)
         {
             for (int i = 0; i < str.Length; i++)
@@ -39,6 +40,21 @@ namespace DataStructures.Trie
             currentNode.Children.Add(endSymbol, null);
         }
 
+        public bool ContainsWord(string str)
+        {
+            var currentNode = root;
+            for (int i = 0; i < str.Length; i++)
+            {
+                char letter = str[i];
+                if (!currentNode.Children.ContainsKey(letter))
+                    return false;
+
+
+                currentNode = currentNode.Children[letter];
+            }
+            // Write your code here.
+            return true;
+        }
         public bool Contains(string str)
         {
             var currentNode = root;
