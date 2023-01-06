@@ -47,7 +47,7 @@ namespace Algorithms.Tests
        
         [InlineData("DAEED", true)]
        // [InlineData("DAEED", true)]
-        [InlineData("eeccccbebaeeabebccceea", true)]
+        [InlineData("eeccccbebaeeabebccceea", false)]
 
         public void CanBeValidPalindrome(string input, bool expected)
         {
