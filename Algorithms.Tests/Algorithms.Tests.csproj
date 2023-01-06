@@ -23,6 +23,7 @@
     <ProjectReference Include="..\Algorithims\Algorithims.csproj" />
     <ProjectReference Include="..\DataStructures\DataStructures.csproj" />
     <ProjectReference Include="..\MicrosoftInterview\MicrosoftInterview.csproj" />
+    <ProjectReference Include="..\Patterns\Patterns.csproj" />
   </ItemGroup>
 
 </Project>
