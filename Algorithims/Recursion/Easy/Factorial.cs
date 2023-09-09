@@ -9,7 +9,7 @@ namespace Algorithims.Recursion.Easy
 {
     public static class Factorial
     {
-        public static Dictionary<int, long> Memo = new Dictionary<int, long>();
+        public static readonly Dictionary<int, long> Memo = new Dictionary<int, long>();
         public static void Run()
         {
 
@@ -20,7 +20,7 @@ namespace Algorithims.Recursion.Easy
                 int number = int.Parse(ReadLine());
                 sw.Start();
                 Thread.Sleep(1);
-                WriteLine($"Facrtorial is : {GetFactorialIterative(number)}");
+                WriteLine($"Facrtorial is : {GetFactorial(number)}");
 
 
                 WriteLine();
@@ -32,11 +32,8 @@ namespace Algorithims.Recursion.Easy
 
         private static long GetFactorial(int number)
         {
-            //var memomizedDict = new Dictionary<int, long>();
-
             Memo.TryAdd(1, 1);
             return GetFactorial(number, Memo);
-
         }
 
         private static long GetFactorial(int number, Dictionary<int, long> memo)

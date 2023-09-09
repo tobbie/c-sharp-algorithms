@@ -15,8 +15,10 @@ namespace ProgramEntryPoint
 		static void Main(string[] args)
 		{
             //Test this
-            Fibonacci.Run();
-            RecursionDemo.Run();
+            Factorial.Run();
+           // Fibonacci.Run();
+           // RecursionDemo.Run();
+
             //var graphTraversal = new GraphTraversal();
             /**	
 			graphTraversal.DepthFirstSearchPrint(graphTraversal.Graph, 'a');
