@@ -6,6 +6,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Program.EntryPoint", "Algor
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{386B4A69-64D2-4310-AED1-ADD84973D304}"
 	ProjectSection(SolutionItems) = preProject
+		build.yml = build.yml
 		nuget.config = nuget.config
 		README.md = README.md
 		.github\workflows\starter.yml = .github\workflows\starter.yml
@@ -25,7 +26,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Algorithms.Tests", "Algorit
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MicrosoftInterview", "MicrosoftInterview\MicrosoftInterview.csproj", "{334D115D-9619-480E-ACD3-ABCBD5A003FF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Patterns", "Patterns\Patterns.csproj", "{CC021A54-6B78-46A9-98B6-581117A4A5DF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Patterns", "Patterns\Patterns.csproj", "{CC021A54-6B78-46A9-98B6-581117A4A5DF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
