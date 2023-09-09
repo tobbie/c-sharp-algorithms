@@ -6,7 +6,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Program.EntryPoint", "Algor
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{386B4A69-64D2-4310-AED1-ADD84973D304}"
 	ProjectSection(SolutionItems) = preProject
-		build.yml = build.yml
+		.github\workflows\build.yml = .github\workflows\build.yml
 		nuget.config = nuget.config
 		README.md = README.md
 		.github\workflows\starter.yml = .github\workflows\starter.yml
