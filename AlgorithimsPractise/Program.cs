@@ -14,19 +14,15 @@ namespace ProgramEntryPoint
 	{
 		static void Main(string[] args)
 		{
-
+            //Test this
             Fibonacci.Run();
-
-
+            RecursionDemo.Run();
             //var graphTraversal = new GraphTraversal();
-            /**
-			
+            /**	
 			graphTraversal.DepthFirstSearchPrint(graphTraversal.Graph, 'a');
 			graphTraversal.BreadthFirstSearchPrint(graphTraversal.Graph, 'a');
 			**/
             //	graphTraversal.DepthFirstSearchGrid(graphTraversal.Grid);
-
-            //RecursionDemo.Run();
 
 
             //var array = LevenshteinDistance.MinimumEdits("abc", "yabd");
