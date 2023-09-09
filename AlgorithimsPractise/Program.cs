@@ -16,7 +16,7 @@ namespace ProgramEntryPoint
 		{
             //Test this
             Fibonacci.Run();
-
+            RecursionDemo.Run();
             //var graphTraversal = new GraphTraversal();
             /**	
 			graphTraversal.DepthFirstSearchPrint(graphTraversal.Graph, 'a');
@@ -24,7 +24,7 @@ namespace ProgramEntryPoint
 			**/
             //	graphTraversal.DepthFirstSearchGrid(graphTraversal.Grid);
 
-            //RecursionDemo.Run();
+
             //var array = LevenshteinDistance.MinimumEdits("abc", "yabd");
             //	Util.Print2D(array);
             //PowerSet.Run();
