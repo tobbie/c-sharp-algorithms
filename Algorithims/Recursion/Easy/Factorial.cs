@@ -9,7 +9,7 @@ namespace Algorithims.Recursion.Easy
 {
     public static class Factorial
     {
-        public static readonly Dictionary<int, long> Memo = new Dictionary<int, long>();
+        private static readonly Dictionary<int, long> Memo = new Dictionary<int, long>();
         public static void Run()
         {
 
