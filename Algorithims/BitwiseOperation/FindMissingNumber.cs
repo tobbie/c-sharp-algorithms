@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Algorithims.BitwiseOperation
 {
-    public class FindMissingNumber
+    public static class FindMissingNumber
     {
         public static int MissingNumber(int[] array)
         {
@@ -22,8 +22,6 @@ namespace Algorithims.BitwiseOperation
 
             for (int j = 1; j < array.Length; j++)       
                 x2 = x2 ^ array[j];
-
-
             return x1 ^ x2;
         }
     }
