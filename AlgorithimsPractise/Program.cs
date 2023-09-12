@@ -11,47 +11,12 @@ using Common;
 namespace ProgramEntryPoint
 {
 	class Program
-	{
+    {
 		static void Main(string[] args)
-		{
-            //Test this
+		{   
             Factorial.Run();
-           // Fibonacci.Run();
-           // RecursionDemo.Run();
-
-            //var graphTraversal = new GraphTraversal();
-            /**	
-			graphTraversal.DepthFirstSearchPrint(graphTraversal.Graph, 'a');
-			graphTraversal.BreadthFirstSearchPrint(graphTraversal.Graph, 'a');
-			**/
-            //	graphTraversal.DepthFirstSearchGrid(graphTraversal.Grid);
-
-
-            //var array = LevenshteinDistance.MinimumEdits("abc", "yabd");
-            //	Util.Print2D(array);
-            //PowerSet.Run();
-
-            //Fibonacci.Run();
-            //Permutation.Run();
-            //ProductSum.Run();
-
-
-            //Factorial.Run();
-            // RunLengthEncoding.Run();
-            //GroupAnagrams.Run();
-            //ValidAnagram.Run();
-            //RecursionDemo.Run();
-
-            //LongestPalindromicSubstring.Run();
-
-            //FirstDuplicateValue.Run();
-            //ValidPalindrome.Run();	
-
-            //------Press enter to exit program  
-            //ReadLine();	
+            //Press enter to exit program  
+            ReadLine();	
         }
-
-
-
     }
 }
