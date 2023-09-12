@@ -11,7 +11,7 @@ namespace Algorithims.Recursion.Easy
     public static class Factorial
     {
         private static readonly Dictionary<int, long> Memo = new Dictionary<int, long>();
-        private static readonly int MAX_TIME = 3;
+       
         
         public static void Run()
         {
@@ -30,7 +30,7 @@ namespace Algorithims.Recursion.Easy
                 WriteLine($"Time elapsed: {sw.ElapsedMilliseconds / 1000} seconds, {sw.ElapsedMilliseconds} milliseconds, {sw.Elapsed}");
                 WriteLine();
 
-                if (WatchWrapper.ElapsedTime / 2000 > MAX_TIME)
+                if (WatchWrapper.ElapsedTime / 2000 > WatchWrapper.MAX_TIME)
                 {
                     WriteLine($"Ending loop and program...");
                     WatchWrapper.Stop();

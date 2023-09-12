@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Common;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Threading;
@@ -8,9 +9,10 @@ namespace Algorithims.Recursion.Easy
 {
 	public static class Fibonacci
 	{
-		public static void Run() {
-			
-			while (true)
+		public static void Run() 
+		{
+            WatchWrapper.Start();
+            while (true)
 			{
 				Write("Find fibonacci: ");
 				var sw = new Stopwatch();
@@ -24,7 +26,14 @@ namespace Algorithims.Recursion.Easy
 				sw.Stop();
 				WriteLine($"Time elapsed: {sw.ElapsedMilliseconds / 1000} seconds, {sw.ElapsedMilliseconds} milliseconds, {sw.Elapsed}");
 				WriteLine();
-			}
+
+                if (WatchWrapper.ElapsedTime / 2000 > WatchWrapper.MAX_TIME)
+                {
+                    WriteLine($"Ending loop and program...");
+                    WatchWrapper.Stop();
+                    break;
+                }
+            }
 			
 		}
 

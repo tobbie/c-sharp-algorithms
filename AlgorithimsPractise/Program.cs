@@ -13,8 +13,8 @@ namespace ProgramEntryPoint
 	class Program
     {
 		static void Main(string[] args)
-		{   
-            Factorial.Run();
+		{
+            Fibonacci.Run();
             //Press enter to exit program  
             ReadLine();	
         }
