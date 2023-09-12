@@ -18,9 +18,8 @@ namespace Algorithims.BitwiseOperation
                bitCount += 1;
                n =  n >> 1; 
             }
-
             int all_bits_set = (int)Math.Pow(2, bitCount) - 1;
             return number ^ all_bits_set;
-;       }
+       }
     }
 }
