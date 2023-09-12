@@ -4,15 +4,19 @@ using System.Diagnostics;
 using System.Threading;
 using static System.Console;
 using System.Numerics;
+using Common;
 
 namespace Algorithims.Recursion.Easy
 {
     public static class Factorial
     {
         private static readonly Dictionary<int, long> Memo = new Dictionary<int, long>();
+        private static readonly int MAX_TIME = 3;
+        
         public static void Run()
         {
-
+            // Fix infinite loop problem - exit code after 5mins max
+            WatchWrapper.Start(); 
             while (true)
             {
                 Write("Find factorial: ");
@@ -21,12 +25,17 @@ namespace Algorithims.Recursion.Easy
                 sw.Start();
                 Thread.Sleep(1);
                 WriteLine($"Facrtorial is : {GetFactorial(number)}");
-
-
                 WriteLine();
                 sw.Stop();
                 WriteLine($"Time elapsed: {sw.ElapsedMilliseconds / 1000} seconds, {sw.ElapsedMilliseconds} milliseconds, {sw.Elapsed}");
                 WriteLine();
+
+                if (WatchWrapper.ElapsedTime / 2000 > MAX_TIME)
+                {
+                    WriteLine($"Ending loop and program...");
+                    WatchWrapper.Stop();
+                    break;
+                }                 
             }
         }
 
