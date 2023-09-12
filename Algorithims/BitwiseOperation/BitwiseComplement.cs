@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Algorithims.BitwiseOperation
 {
-    public class BitwiseComplement
+    public static class BitwiseComplement
     {
         public static int GetComplement(int number)
         {
@@ -16,11 +16,10 @@ namespace Algorithims.BitwiseOperation
             while(n > 0)
             {
                bitCount += 1;
-               n =  n >> 1; // shift bits in 1 by 1 step to the right;
+               n =  n >> 1; 
             }
 
             int all_bits_set = (int)Math.Pow(2, bitCount) - 1;
-
             return number ^ all_bits_set;
 ;       }
     }
