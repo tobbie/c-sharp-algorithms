@@ -9,6 +9,7 @@ namespace Common
 {
     public static class WatchWrapper
     {
+        public static readonly int MAX_TIME = 5;
         public static long ElapsedTime {
             get {
                 return Watch.ElapsedMilliseconds;
