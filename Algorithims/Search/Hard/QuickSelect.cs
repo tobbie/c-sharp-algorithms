@@ -1,7 +1,7 @@
 ﻿using System;
 using Common;
 
-namespace Algorithims.Search.Hard
+namespace Algorithms.Search.Hard
 {
     public class QuickSelect
     {

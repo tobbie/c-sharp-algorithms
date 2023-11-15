@@ -1,5 +1,5 @@
 ﻿using Xunit;
-using Algorithims.DynamicProgramming.Medium;
+using Algorithms.DynamicProgramming.Medium;
 using System.Linq;
 using System.Collections.Generic;
 

@@ -6,7 +6,7 @@ using static System.Console;
 using System.Numerics;
 using Common;
 
-namespace Algorithims.Recursion.Easy
+namespace Algorithms.Recursion.Easy
 {
     public static class Factorial
     {

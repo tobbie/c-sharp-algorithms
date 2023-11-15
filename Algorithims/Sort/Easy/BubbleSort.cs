@@ -1,7 +1,7 @@
 ﻿
 
 
-namespace Algorithims.Sort.Easy
+namespace Algorithms.Sort.Easy
 {
     public class BubbleSort
     {

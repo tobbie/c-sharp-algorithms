@@ -6,13 +6,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Program.EntryPoint", "Algor
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{386B4A69-64D2-4310-AED1-ADD84973D304}"
 	ProjectSection(SolutionItems) = preProject
-		.github\workflows\build.yml = .github\workflows\build.yml
 		nuget.config = nuget.config
+		.github\workflows\build.yml = .github\workflows\build.yml
+		.github\workflows\build_sonar.txt = .github\workflows\build_sonar.txt
 		README.md = README.md
-		.github\workflows\starter.yml = .github\workflows\starter.yml
 	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Algorithims", "Algorithims\Algorithims.csproj", "{9722AB11-5056-402D-A4AD-4BEDA6157F89}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Algorithms", "Algorithims\Algorithms.csproj", "{9722AB11-5056-402D-A4AD-4BEDA6157F89}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataStructures", "DataStructures\DataStructures.csproj", "{C0544D10-4E72-43F8-A5A4-0F3ACBE83ED0}"
 EndProject

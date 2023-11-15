@@ -1,6 +1,6 @@
 ﻿using Xunit;
 using System;
-using Algorithims.DynamicProgramming.Medium;
+using Algorithms.DynamicProgramming.Medium;
 
 namespace Algorithms.Tests
 {

@@ -5,7 +5,7 @@ using System.Diagnostics;
 using System.Threading;
 using static System.Console;
 
-namespace Algorithims.Recursion.Easy
+namespace Algorithms.Recursion.Easy
 {
 	public static class Fibonacci
 	{

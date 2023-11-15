@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Numerics;
 
-namespace Algorithims.BitwiseOperation
+namespace Algorithms.BitwiseOperation
 {
     public class NumberOfSteps
     {

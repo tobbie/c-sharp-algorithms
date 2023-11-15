@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Algorithims.BitwiseOperation
+namespace Algorithms.BitwiseOperation
 {
     public class FlipAndInvertImage
     {

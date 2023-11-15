@@ -1,7 +1,7 @@
 ﻿
 using Common;
 
-namespace Algorithims.Sort.Easy
+namespace Algorithms.Sort.Easy
 {
     public class SelectionSort
     {

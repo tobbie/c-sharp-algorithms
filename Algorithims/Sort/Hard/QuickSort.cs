@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Common;
 
-namespace Algorithims.Sort.Hard
+namespace Algorithms.Sort.Hard
 {
     public class QuickSort
     {

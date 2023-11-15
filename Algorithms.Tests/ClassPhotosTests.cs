@@ -1,7 +1,7 @@
 using System;
 using Xunit;
 using System.Collections.Generic;
-using Algorithims.Greedy.Easy;
+using Algorithms.Greedy.Easy;
 
 namespace Algorithms.Tests
 {

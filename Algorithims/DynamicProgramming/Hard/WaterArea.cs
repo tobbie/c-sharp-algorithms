@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using static System.Math;
 
-namespace Algorithims.DynamicProgramming.Hard
+namespace Algorithms.DynamicProgramming.Hard
 {
   public class WaterArea
     {

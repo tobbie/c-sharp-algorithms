@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Xunit;
-using Algorithims.Search.Easy;
-using Algorithims.Search.Medium;
-using Algorithims.Search.Hard;
+using Algorithms.Search.Easy;
+using Algorithms.Search.Medium;
+using Algorithms.Search.Hard;
 
 namespace Algorithms.Tests
 {

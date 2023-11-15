@@ -1,5 +1,5 @@
 ﻿using Xunit;
-using Algorithims.BitwiseOperation;
+using Algorithms.BitwiseOperation;
 using System.Linq;
 
 namespace Algorithms.Tests

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Algorithims.DynamicProgramming.Medium
+namespace Algorithms.DynamicProgramming.Medium
 {
   public class PerfectSquares
     {
@@ -31,7 +31,6 @@ namespace Algorithims.DynamicProgramming.Medium
                 minmumSquares = Math.Min(minmumSquares, sumSquares);
                 
             }
-
             memo.Add(n, minmumSquares);
             return memo[n];
         }

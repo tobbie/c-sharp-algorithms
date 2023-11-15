@@ -1,7 +1,7 @@
 ﻿using System;
 using Xunit;
-using Algorithims.DynamicProgramming.Medium;
-using Algorithims.DynamicProgramming.Hard;
+using Algorithms.DynamicProgramming.Medium;
+using Algorithms.DynamicProgramming.Hard;
 using MicrosoftInterview;
 using System.Linq;
 

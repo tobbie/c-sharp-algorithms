@@ -1,7 +1,7 @@
 ﻿using System;
 
 
-namespace Algorithims.Search.Easy
+namespace Algorithms.Search.Easy
 {
   public class BinarySearch
     {

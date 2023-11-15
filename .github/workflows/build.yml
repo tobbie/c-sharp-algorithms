@@ -4,8 +4,9 @@ on: [push]
 
 jobs:
   build:
-
+    name: Build and Test
     runs-on: ubuntu-latest
+    environment: test
     strategy:
       matrix:
         dotnet-version: ['6.0.x']

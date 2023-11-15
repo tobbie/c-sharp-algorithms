@@ -1,8 +1,8 @@
 ﻿using System;
-using Algorithims.Sort.Easy;
-using Algorithims.Sort.Hard;
-using Algorithims.Sort.VeryHard;
-using Algorithims.Sort.Medium;
+using Algorithms.Sort.Easy;
+using Algorithms.Sort.Hard;
+using Algorithms.Sort.VeryHard;
+using Algorithms.Sort.Medium;
 using Xunit;
 using System.Linq;
 

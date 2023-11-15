@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using static System.Math;
 
-namespace Algorithims.Recursion.Medium
+namespace Algorithms.Recursion.Medium
 {
    public class StaircaseTraversal
     {
