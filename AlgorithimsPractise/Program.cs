@@ -1,10 +1,10 @@
 ﻿using static System.Console;
 using DataStructures.Strings.LeetCode;
-using Algorithims.Recursion;
+using Algorithms.Recursion;
 using DataStructures.Arrays.LeetCode;
-using Algorithims.Recursion.Medium;
-using Algorithims.Recursion.Easy;
-using Algorithims.DynamicProgramming.Medium;
+using Algorithms.Recursion.Medium;
+using Algorithms.Recursion.Easy;
+using Algorithms.DynamicProgramming.Medium;
 using DataStructures.Graphs;
 using Common;
 

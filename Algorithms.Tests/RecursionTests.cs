@@ -1,7 +1,7 @@
 ﻿using System;
 using Xunit;
-using Algorithims.Recursion.Easy;
-using Algorithims.Recursion.Medium;
+using Algorithms.Recursion.Easy;
+using Algorithms.Recursion.Medium;
 
 
 namespace Algorithms.Tests

@@ -1,7 +1,7 @@
 ﻿using System;
 using static System.Console;
 
-namespace Algorithims.Recursion
+namespace Algorithms.Recursion
 {
     public static class RecursionDemo
     {

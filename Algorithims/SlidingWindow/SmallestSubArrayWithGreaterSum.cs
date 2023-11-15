@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Algorithims.SlidingWindow
+namespace Algorithms.SlidingWindow
 {
    public class SmallestSubArrayWithGreaterSum
     {

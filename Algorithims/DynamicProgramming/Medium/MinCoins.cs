@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Numerics;
 
-namespace Algorithims.DynamicProgramming.Medium
+namespace Algorithms.DynamicProgramming.Medium
 {   
     public class MinimumCoins
     {

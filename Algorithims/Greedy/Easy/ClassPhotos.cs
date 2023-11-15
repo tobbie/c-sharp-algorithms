@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 
 
-namespace Algorithims.Greedy.Easy
+namespace Algorithms.Greedy.Easy
 {
     public class ClassPhotos
     {

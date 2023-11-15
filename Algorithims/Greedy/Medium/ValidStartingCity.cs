@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Algorithims.Greedy.Medium
+namespace Algorithms.Greedy.Medium
 {
   public class ValidStartingCity
     {

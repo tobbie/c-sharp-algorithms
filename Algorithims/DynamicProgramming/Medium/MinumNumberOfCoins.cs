@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Algorithims.DynamicProgramming.Medium
+namespace Algorithms.DynamicProgramming.Medium
 {
     public class MinumNumberOfCoins
     {

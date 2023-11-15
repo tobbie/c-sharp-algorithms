@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Common;
 
-namespace Algorithims.Sort.Medium
+namespace Algorithms.Sort.Medium
 {
     public class ThreeNumberSort
     {

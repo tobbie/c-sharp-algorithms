@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Algorithims.Search.Medium
+namespace Algorithms.Search.Medium
 {
     public class SearchSortedMatrix
     {

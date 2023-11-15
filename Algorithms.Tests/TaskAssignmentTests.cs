@@ -1,5 +1,5 @@
 ﻿using Xunit;
-using Algorithims.Greedy.Medium;
+using Algorithms.Greedy.Medium;
 
 namespace Algorithms.Tests
 {

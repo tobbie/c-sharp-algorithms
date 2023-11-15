@@ -1,6 +1,6 @@
 ﻿
 using Xunit;
-using Algorithims.SlidingWindow;
+using Algorithms.SlidingWindow;
 using Patterns.SlidingWindow;
 using System.Linq;
 

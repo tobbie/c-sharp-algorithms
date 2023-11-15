@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Algorithims.Search.Hard
+namespace Algorithms.Search.Hard
 {
     public class ShiftedBinarySearch
     {

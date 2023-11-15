@@ -1,6 +1,6 @@
 ﻿
 
-namespace Algorithims.Sort.VeryHard
+namespace Algorithms.Sort.VeryHard
 {
     public  class CountInversions
     {

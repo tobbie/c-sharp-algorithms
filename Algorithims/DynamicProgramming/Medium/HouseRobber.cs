@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Algorithims.DynamicProgramming.Medium
+namespace Algorithms.DynamicProgramming.Medium
 {
     // max sum non adjacent
   public class HouseRobber

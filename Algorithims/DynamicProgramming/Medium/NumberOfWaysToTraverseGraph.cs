@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Numerics;
-using Algorithims.Recursion.Easy;
+using Algorithms.Recursion.Easy;
 
-namespace Algorithims.DynamicProgramming.Medium
+namespace Algorithms.DynamicProgramming.Medium
 {
     public class NumberOfWaysToTraverseGraph
     {

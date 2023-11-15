@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Common;
 
-namespace Algorithims.Recursion.Medium
+namespace Algorithms.Recursion.Medium
 {
     public static class PowerSet
     {

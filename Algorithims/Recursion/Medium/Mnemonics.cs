@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using Common;
 
-namespace Algorithims.Recursion.Medium
+namespace Algorithms.Recursion.Medium
 {
     public static class Mnemonics
     {

@@ -12,7 +12,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Algorithims", "Algorithims\Algorithims.csproj", "{9722AB11-5056-402D-A4AD-4BEDA6157F89}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Algorithms", "Algorithims\Algorithms.csproj", "{9722AB11-5056-402D-A4AD-4BEDA6157F89}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataStructures", "DataStructures\DataStructures.csproj", "{C0544D10-4E72-43F8-A5A4-0F3ACBE83ED0}"
 EndProject

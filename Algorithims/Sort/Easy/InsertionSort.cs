@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Algorithims.Sort.Easy
+namespace Algorithms.Sort.Easy
 {
     public class InsertionSort
     {

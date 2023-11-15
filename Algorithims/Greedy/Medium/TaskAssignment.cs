@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 
 
-namespace Algorithims.Greedy.Medium
+namespace Algorithms.Greedy.Medium
 {
     public class TaskAssignment
     {
