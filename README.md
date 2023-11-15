@@ -13,6 +13,7 @@ The solutions are organised by difficulty (Easy  -  Very Hard) per algorithm or 
 	* Graphs
 	* Heaps
 	* Stacks
+	* Queues
 	* Trees - Binary Search Trees and Binary Trees
 	* Trie  - Prefix Trie and Suffix Trie
 
