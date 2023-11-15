@@ -55,18 +55,13 @@ namespace DataStructures.Trie
                         MaxHeap.Enqueue(word, new WordItem(Lookup[word], word));
                 }
 
-             
-
                 while (MaxHeap.Count > 0)
                 {
                     answerList.Add(MaxHeap.Dequeue());
                     if (answerList.Count == 3)
                         break;
                 }    
-                   
-
-                return answerList;    
-                    
+                return answerList;                       
             }
         }
     }
