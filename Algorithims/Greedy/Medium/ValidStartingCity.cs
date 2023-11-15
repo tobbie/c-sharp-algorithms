@@ -20,7 +20,6 @@ namespace Algorithims.Greedy.Medium
                     minimumCity = index;
                 }
             }
-
             return minimumCity;
                    
         }

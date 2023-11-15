@@ -7,8 +7,7 @@ using System.Threading.Tasks;
 namespace Algorithims.DynamicProgramming.Medium
 {
     public class LevenshteinDistance
-    {
-       
+    {  
         public static int MinimumEdits(string string1, string string2) {
            
             int[,] edits = new int[string1.Length + 1, string2.Length + 1];

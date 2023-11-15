@@ -31,7 +31,6 @@ namespace Algorithims.DynamicProgramming.Medium
                 minmumSquares = Math.Min(minmumSquares, sumSquares);
                 
             }
-
             memo.Add(n, minmumSquares);
             return memo[n];
         }
