@@ -10,9 +10,10 @@ The solutions are organised by difficulty (Easy  -  Very Hard) per algorithm or 
 	* Arrays
 	* LinkedLists
 	* Strings
-	* Graphs
+	* Graphs - DFS, BFS
 	* Heaps
 	* Stacks
+	* Queues
 	* Trees - Binary Search Trees and Binary Trees
 	* Trie  - Prefix Trie and Suffix Trie
 
