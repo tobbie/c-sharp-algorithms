@@ -5,7 +5,7 @@
 The project is a group of class libraries that contain solutions to fairly common algorithm and data structure problems. 
 The solutions are organised by difficulty (Easy  -  Very Hard) per algorithm or data striucture being solved for. A good number of the solutions have tests you can run to confirm they work.
 
-### Data Structures covered inlcude :
+### Data Structures covered include:
 
 	* Arrays
 	* LinkedLists
@@ -16,7 +16,7 @@ The solutions are organised by difficulty (Easy  -  Very Hard) per algorithm or 
 	* Trees - Binary Search Trees and Binary Trees
 	* Trie  - Prefix Trie and Suffix Trie
 
-### Algorithims covered include :
+### Algorithms covered include:
 	* Sorting
 	* Searching
 	* Recursion
@@ -25,10 +25,10 @@ The solutions are organised by difficulty (Easy  -  Very Hard) per algorithm or 
 	* Dynamic Programming
 	* Sliding Window
 
-In addition to the above, there's a class library project that contain common patterns to solve certian types of problems and another with
-questions Microsoft asks at interviews
+In addition to the above, there's a class library project that contains common patterns to solve certain types of problems and another with popular
+Microsoft interview questions.
 
 To get started, clone the repo, build the project, then run `dotnet test` so see all tests run.
 
-This solution requires .NET 6 to run
+This solution requires `.NET 6` to run. Happy coding!
 
