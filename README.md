@@ -1,4 +1,4 @@
-﻿# C# solutions to commmon data structures and algorithm problems
+﻿# C# solutions to common data structures and algorithm problems
 
 ## Problems are sourced from algoexpert, leetcode and educative.io
 
