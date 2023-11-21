@@ -31,5 +31,5 @@ Microsoft interview questions.
 
 To get started, clone the repo, build the project, then run `dotnet test` to see all tests run.
 
-This solution requires `.NET 6` to run. Happy coding!
+This solution requires `.NET 6` to run. Happy coding! :)
 
