@@ -3,7 +3,7 @@
 ## Problems are sourced from algoexpert, leetcode and educative.io
 
 The project is a group of class libraries that contain solutions to fairly common algorithm and data structure problems. 
-The solutions are organised by difficulty (Easy  -  Very Hard) per algorithm or data striucture being solved for. A good number of the solutions have tests you can run to confirm they work.
+The solutions are organised by difficulty (Easy  -  Very Hard) per algorithm or data structure being solved for. A good number of the solutions have tests you can run to confirm they work.
 
 ### Data Structures covered include:
 
