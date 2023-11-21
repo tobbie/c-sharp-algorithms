@@ -29,7 +29,7 @@ The solutions are organised by difficulty (Easy  -  Very Hard) per algorithm or 
 In addition to the above, there's a class library project that contains common patterns to solve certain types of problems and another with popular
 Microsoft interview questions.
 
-To get started, clone the repo, build the project, then run `dotnet test` so see all tests run.
+To get started, clone the repo, build the project, then run `dotnet test` to see all tests run.
 
 This solution requires `.NET 6` to run. Happy coding!
 
