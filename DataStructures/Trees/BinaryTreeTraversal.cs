@@ -150,6 +150,35 @@ namespace DataStructures.Trees
             return new List<char> { root.Value }.Concat(leftValues).Concat(rightValues).ToList();
         }
 
+        public static List<char> ResultList { get; private set; } = new List<char>();
+        public static void PreOrder(BTNode<char> root)
+        {
+            if (root == null)
+                return;
+
+            ResultList.Add(root.Value);
+            PreOrder(root.Left);
+            PreOrder(root.Right);
+        }
+
+        public static void InOrder(BTNode<char> root)
+        {
+            if (root == null)
+                return;
+            InOrder(root.Left);
+            ResultList.Add(root.Value);
+            InOrder(root.Right);
+        }
+
+        public static void PostOrder(BTNode<char> root)
+        {
+            if (root == null)
+                return;
+            PostOrder(root.Left);
+            PostOrder(root.Right);
+            ResultList.Add(root.Value);
+        }
+
 
     }
 }

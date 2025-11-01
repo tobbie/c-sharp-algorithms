@@ -6,6 +6,7 @@ using DataStructures.Trees.Medium;
 using Common;
 using DataStructures.Trees;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace DataStructures.Tests
 {
@@ -169,6 +170,30 @@ namespace DataStructures.Tests
 
 
             var actual = AllTreePaths.TreePath(a);
+            Assert.Equal(expected, actual);
+        }
+
+        [Fact]
+        public void ShouldDoPreOrderTaversal()
+        {
+            var a = new BTNode<char>('a');
+            var b = new BTNode<char>('b');
+            var c = new BTNode<char>('c');
+           
+
+            a.Left = b;
+            a.Right = c;
+
+
+            var expected = new List<char>() { 'a', 'b', 'c' };
+           // expected.Add(new List<char> { 'a', 'b', 'e' });
+            //expected.Add(new List<char> { 'a', 'c', 'f' });
+
+
+            BinaryTreeTraversal.PreOrder(a);
+            var actual = BinaryTreeTraversal.ResultList.ToList();
+           
+
             Assert.Equal(expected, actual);
         }
     }

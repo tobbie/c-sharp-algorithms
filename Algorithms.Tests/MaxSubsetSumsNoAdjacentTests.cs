@@ -1,5 +1,6 @@
 ﻿using Xunit;
 using Algorithms.DynamicProgramming.Medium;
+using DataStructures.Arrays.Neetcode;
 
 namespace Algorithms.Tests
 {
@@ -34,6 +35,16 @@ namespace Algorithms.Tests
             //Assert
             Assert.NotEqual(expected, actual);
 
+        }
+
+        [Theory]
+        [InlineData(new int[] { 1, 2, 3, 1}, 4)]
+        public void ShouldReturnMaxiumValue(int[] array, int expected)
+        {
+            var actual = HouseRobber.RobHouses(array);
+            Assert.Equal(expected, actual);
+
+           
         }
 
 
