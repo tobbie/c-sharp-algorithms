@@ -16,6 +16,14 @@ namespace DataStructures.LinkedLists.Hard
             var p1 = headOne;
             var p2 = headTwo;
 
+            //check for null input lists
+            if (p1 == null && p2 == null)
+                return p1;
+            else if (p1 == null)
+                return p2;
+            else if (p2 == null)
+                return p1;
+
             ListNode previous = null;
 
             while(p1 != null && p2 != null)
@@ -43,6 +51,9 @@ namespace DataStructures.LinkedLists.Hard
 
         public static ListNode MergeKLists(ListNode[] lists)
         {
+            if (lists.Length < 1)
+                return null;
+
             var resultList = lists[0];
 
             for (int i = 1; i < lists.Length; i++)

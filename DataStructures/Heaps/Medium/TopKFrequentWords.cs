@@ -12,7 +12,7 @@ namespace DataStructures.Heaps.Medium
         public static IList<string> TopFrequent(string[] words, int k)
         {
             /**
-             * Iterate over iput arrays
+             * Iterate over input arrays
              * Compute frequncy of unique words with hashtable
              * iterate over keys of hashtable, store each key in prority queue
              * while k is greater than zero, remove top item in priority queue and add to result array
