@@ -1,18 +1,11 @@
-﻿using static System.Console;
+﻿using Playground.BytesExamples;
 
-namespace ProgramEntryPoint
+namespace ProgramEntryPoint;
+
+public class Program
 {
-    class Program
+    public static void Main(string[] args)
     {
-        static void Main(string[] args)
-        {
-            char b = 'b';
-            var num = 'e' - 'a';
-            WriteLine(num);
-
-
-            //  TestingJson.RUN();
-            ReadLine();
-        }
+        ConvertTextToBytes.Run();
     }
 }
