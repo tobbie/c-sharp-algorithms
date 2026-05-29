@@ -1,4 +1,4 @@
-﻿using Playground.BytesExamples;
+﻿using Playground.MemoryManagement;
 
 namespace ProgramEntryPoint;
 
@@ -6,6 +6,8 @@ public class Program
 {
     public static void Main(string[] args)
     {
-        ConvertTextToBytes.Run();
+        //ConvertTextToBytes.Run();
+        // MemoryLeaker.Run();
+        NonMemoryLeaker.Run();
     }
 }
